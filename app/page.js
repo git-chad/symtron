@@ -4,6 +4,7 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import gsap from "gsap";
 import { useRouter } from "next/navigation";
 import LoadingComponent from "./components/loading-module/loading-component";
+import HomeComponent from "./components/home-module/home-component";
 
 export default function page() {
   const router = useRouter();
@@ -26,5 +27,10 @@ export default function page() {
     }, 35000000);
   }, []);
 
-  return <main>{isLoading && <LoadingComponent timeline={timeline} />}</main>;
+  return (
+    <main>
+      {/* {isLoading && <LoadingComponent timeline={timeline} />} */}
+      <HomeComponent />
+    </main>
+  );
 }

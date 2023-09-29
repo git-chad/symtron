@@ -1,0 +1,13 @@
+div {
+    padding: 24px;
+    h1 {
+        font-size: min(16vw, 256px);
+        font-weight:900;
+    }
+    h2 {
+        width: 50vw;
+        font-size: min(3vw, 56px);
+        line-height: 95%;
+        text-wrap: balance;
+    }
+}
