@@ -1,10 +1,30 @@
-import Link from "next/link"
+"use client";
+import Link from "next/link";
+import { useEffect, useLayoutEffect, useState } from "react";
+import gsap from "gsap";
+import { useRouter } from "next/navigation";
+import LoadingComponent from "./components/loading-module/loading-component";
 
 export default function page() {
-  return (
-    <main className="text-[30rem] tracking-tighter">
-      <h1 className="font-black">symtron</h1>
-        <Link href="/home" className="hover:underline mt-[-300px] absolute">go to home</Link>
-    </main>
-  )
+  const router = useRouter();
+  const [timeline, setTimeline] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useLayoutEffect(() => {
+    const context = gsap.context(() => {
+      const tl = gsap.timeline({
+        paused: false,
+      });
+      setTimeline(tl);
+    });
+    return () => context.revert();
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 35000000);
+  }, []);
+
+  return <main>{isLoading && <LoadingComponent timeline={timeline} />}</main>;
 }
