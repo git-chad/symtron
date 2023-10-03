@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { useRouter } from "next/navigation";
 import LoadingComponent from "./components/loading-module/loading-component";
 import HomeComponent from "./components/home-module/home-component";
+import HomeStatistics from "./components/statistics-module/home-statistics";
 
 export default function page() {
   const router = useRouter();
@@ -31,6 +32,7 @@ export default function page() {
     <main>
       {/* {isLoading && <LoadingComponent timeline={timeline} />} */}
       <HomeComponent />
+      <HomeStatistics/>
     </main>
   );
 }
