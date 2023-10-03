@@ -1,21 +1,43 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Cairo } from "next/font/google";
 import { Overpass } from "next/font/google";
+import "./home-statistics.scss";
 
 const cairo = Cairo({
-    weight: ['variable'],
-    subsets: ["latin"]
-  });
-const overpass = Overpass({
-  weight: ['variable'],
-  subsets: ["latin"]
+  weight: ["variable"],
+  subsets: ["latin"],
 });
-
-
+const overpass = Overpass({
+  weight: ["variable"],
+  subsets: ["latin"],
+});
 const StatisticItem = ({ finalValue, text }) => {
   const [animatedNumber, setAnimatedNumber] = useState(0);
   const [startAnimation, setStartAnimation] = useState(false);
-  const animationDuration = 750; // Duración total de la animación en milisegundos
+  const animationDuration = 750;
+  const intersectionRef = useRef(null);
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setStartAnimation(true);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (intersectionRef.current) {
+      observer.observe(intersectionRef.current);
+    }
+
+    return () => {
+      if (intersectionRef.current) {
+        observer.unobserve(intersectionRef.current);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     if (startAnimation) {
@@ -37,24 +59,20 @@ const StatisticItem = ({ finalValue, text }) => {
           animationFrameId = requestAnimationFrame(animateNumber);
         }
       };
-
-      // Iniciar la animación cuando startAnimation sea true
       animationFrameId = requestAnimationFrame(animateNumber);
-
-      // Limpiar la animación cuando el componente se desmonte
+      
       return () => cancelAnimationFrame(animationFrameId);
     }
   }, [finalValue, startAnimation]);
 
-  // Iniciar la animación cuando el componente se monte
-  useEffect(() => {
-    setStartAnimation(true);
-  }, []);
-
   return (
-    <div className="w-1/2 p-4">
-      <h3 className={`${cairo.className} text-6xl font-black`}>{Math.round(animatedNumber)}</h3>
-      <p className={`${overpass.className} mt-2 paragraph-with-line-breaks`}>{text}</p>
+    <div className="w-1/2 p-4" ref={intersectionRef}>
+      <h3 className={`${cairo.className} text-6xl font-black`}>
+        {Math.round(animatedNumber)}
+      </h3>
+      <p className={`${overpass.className} mt-2 paragraph-with-line-breaks`}>
+        {text}
+      </p>
     </div>
   );
 };
