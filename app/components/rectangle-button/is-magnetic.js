@@ -1,4 +1,4 @@
-'use client';
+// IsMagnetic.js
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
@@ -18,40 +18,39 @@ const IsMagnetic = ({ children }) => {
     const internalRef = useRef(null);
 
     useEffect(() => {
-        if (!internalRef.current) return; // Exit if no ref
+        const element = internalRef.current;
+        if (!element) return; // Exit if no ref
 
-        const xTo = gsap.quickTo(internalRef.current, "x", { duration: 1, ease: "elastic.out(1, 0.4)" });
-        const yTo = gsap.quickTo(internalRef.current, "y", { duration: 1, ease: "elastic.out(1, 0.4)" });
+        const xTo = gsap.quickTo(element, "x", { duration: 1, ease: "elastic.out(1, 0.4)" });
+        const yTo = gsap.quickTo(element, "y", { duration: 1, ease: "elastic.out(1, 0.4)" });
 
         const mouseMove = (e) => {
             const { clientX, clientY } = e;
-            const { width, height, left, top } = internalRef.current.getBoundingClientRect();
+            const { width, height, left, top } = element.getBoundingClientRect();
             const x = clientX - (left + width / 2);
             const y = clientY - (top + height / 2);
             xTo(x);
             yTo(y);
         };
 
-        const mouseLeave = (e) => {
+        const mouseLeave = () => {
             xTo(0);
             yTo(0);
         };
 
-        internalRef.current.addEventListener("mousemove", mouseMove);
-        internalRef.current.addEventListener("mouseleave", mouseLeave);
+        element.addEventListener("mousemove", mouseMove);
+        element.addEventListener("mouseleave", mouseLeave);
 
         return () => {
-            internalRef.current.removeEventListener("mousemove", mouseMove);
-            internalRef.current.removeEventListener("mouseleave", mouseLeave);
+            element.removeEventListener("mousemove", mouseMove);
+            element.removeEventListener("mouseleave", mouseLeave);
         };
 
     }, []);
 
-    const childWithMergedRefs = React.cloneElement(children, {
+    return React.cloneElement(children, {
         ref: mergeRefs([internalRef, children.ref])
     });
-
-    return childWithMergedRefs;
 }
 
 export default IsMagnetic;

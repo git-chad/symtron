@@ -1,10 +1,9 @@
-"use client";
-import React, { useEffect, useRef, useState } from "react";
+'use client'
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-const Cursor = ({ stickyBtn }) => {
+const Cursor = () => {
   const ref = useRef(null);
-  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const xTo = gsap.quickTo(ref.current, "x", {
@@ -23,43 +22,41 @@ const Cursor = ({ stickyBtn }) => {
       yTo(clientY);
     };
 
-    // manages mouse when hovering over magnetic buttons
-    const mouseOver = () => {
-      setIsHovered(true);
-      gsap.to(ref.current, { scale: 5, duration: 0.3, ease: "power2.out" }); 
-
-      if(isHovered) {
+    // Hover effects
+    const mouseEnter = (e) => {
+      if (e.target.tagName === "A") {
         gsap.to(ref.current, {
-            borderRadius: '0px',
-        })
+          scale: 3.5,
+          duration: 0.3,
+        });
       }
     };
 
-    // manages the out anim of the mouse hover over magnetic buttons
-    const mouseOverLeave = () => {
-      setIsHovered(false);
-      gsap.to(ref.current, { scale: 1, duration: 0.3, ease: "power2.out" }); 
+    const mouseLeave = (e) => {
+      if (e.target.tagName === "A") {
+        gsap.to(ref.current, {
+          scale: 1,
+          duration: 0.3,
+          ease: "power2.out"
+        });
+      }
     };
 
     window.addEventListener("mousemove", mouseMove);
-    if (stickyBtn.current) {
-      stickyBtn.current.addEventListener("mouseover", mouseOver);
-      stickyBtn.current.addEventListener("mouseleave", mouseOverLeave);
-    }
+    document.addEventListener("mouseover", mouseEnter, true);
+    document.addEventListener("mouseout", mouseLeave, true);
 
     return () => {
-        window.removeEventListener("mousemove", mouseMove);
-        if (stickyBtn.current) {
-            stickyBtn.current.removeEventListener("mouseover", mouseOver);
-            stickyBtn.current.removeEventListener("mouseleave", mouseOverLeave);
-        }
+      window.removeEventListener("mousemove", mouseMove);
+      document.removeEventListener("mouseover", mouseEnter, true);
+      document.removeEventListener("mouseout", mouseLeave, true);
     };
   }, []);
 
   return (
     <div
       ref={ref}
-      className="custom-cursor absolute top-0 left-0 w-[20px] h-[20px] rounded-full pointer-events-none"
+      className="custom-cursor fixed top-0 left-0 w-[25px] h-[25px] rounded-full pointer-events-none"
       style={{ zIndex: 200, transformOrigin: "center center" }} // Ensure the cursor scales from its center
     ></div>
   );

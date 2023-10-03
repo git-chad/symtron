@@ -1,4 +1,5 @@
 "use client";
+import Lenis from "@studio-freight/lenis";
 import Link from "next/link";
 import { useEffect, useLayoutEffect, useState, useRef } from "react";
 import gsap from "gsap";
@@ -30,20 +31,28 @@ export default function page() {
     setTimeout(() => {
       setIsLoading(false);
     }, 3500);
+
+    // lenis-smooth scroll, re-use in every page!
+    const lenis = new Lenis();
+
+    // smooth scroll function
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
   }, []);
 
   return (
     <main className="overflow-hidden">
-      {/* {isLoading && <LoadingComponent timeline={timeline} />}
-      <HomeComponent /> 
-      <ParallaxDisplay />
-      <HomeStatistics /> */}
-      <div className="absolute flex justify-center items-center top-96 left-96">
-        <RectangleButton ref={stickyBtn} href={'/products'} label={'Learn more'}/>
-      </div>
+      {isLoading && <LoadingComponent timeline={timeline} />}
 
-      <Cursor stickyBtn={stickyBtn}/>
+      <HomeComponent />
+      <ParallaxDisplay />
+      <HomeStatistics />
+
+      <Cursor stickyBtn={stickyBtn} />
     </main>
   );
 }
- 
