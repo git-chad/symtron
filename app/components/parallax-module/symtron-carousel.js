@@ -14,11 +14,13 @@ const SymtronCarousel = () => {
 
       carousels.forEach((carousel) => {
         const spanTag = carousel.querySelector("span");
-        const spanWidth = spanTag.clientWidth;
+        if (spanTag) {
+          const spanWidth = spanTag.clientWidth;
 
         for (let i = 0; i < 30; i = i + 1) {
           carousel.appendChild(spanTag.cloneNode(true));
         }
+      
 
         const tl = gsap.timeline({
           repeat: -1,
@@ -29,6 +31,7 @@ const SymtronCarousel = () => {
           duration: 6,
           ease: "linear",
         });
+        }
       });
     }
   }, [loading]);

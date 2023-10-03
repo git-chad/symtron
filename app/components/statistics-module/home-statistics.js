@@ -16,8 +16,9 @@ const overpass = Overpass({
   
   const HomeStadistics = () => {
     return (
-      <div className="flex h-auto"> 
-        <div className="w-1/2 p-8">
+      <div className="flex justify-center items-center h-[75vh] ">
+      <div className="flex"> 
+        <div className="w-1/2 p-8 ">
           <h2 className={`${cairo.className} text-5xl font-black`}>
             Latin America’s leading<br /> distributor
           </h2>
@@ -33,6 +34,7 @@ const overpass = Overpass({
           <StatisticItem finalValue={400} text="Satisfied customers" />
           <StatisticItem finalValue={4} text="Presence in 4 countries globally" />
         </div>
+      </div>
       </div>
     );
   };
