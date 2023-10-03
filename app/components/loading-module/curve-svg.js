@@ -18,9 +18,12 @@ const CurveSvg = () => {
   };
 
   useEffect(() => {
+    let animationId;
+
     const checkPos = () => {
+      if (!svgRef.current) return;
       const rect = svgRef.current.getBoundingClientRect();
-      const power = isMobile ? 6 : 10; 
+      const power = isMobile ? 6 : 10;
       const t = Math.min(1, Math.max(0, (rect.top + 1440) / 1440));
       const accentuatedT = Math.pow(t, power);
 
@@ -37,11 +40,11 @@ const CurveSvg = () => {
         return;
       }
 
-      requestAnimationFrame(checkPos);
+      animationId = requestAnimationFrame(checkPos);
     };
     checkPos();
     return () => {
-      cancelAnimationFrame(checkPos);
+      cancelAnimationFrame(animationId);
     };
   }, []);
 
