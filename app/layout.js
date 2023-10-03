@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={overpass.className}>{children}</body>
+      <body className={`${overpass.className}`}>{children}</body>
     </html>
   )
 }

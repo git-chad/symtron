@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.horizontal-line {
+    width: 95%;  
+    height: 1px; 
+    background-color: black;  
+    opacity: 20%;
+}

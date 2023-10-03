@@ -5,7 +5,11 @@ import gsap from "gsap";
 import { useRouter } from "next/navigation";
 import LoadingComponent from "./components/loading-module/loading-component";
 import HomeComponent from "./components/home-module/home-component";
+<<<<<<< HEAD
 import HomeStatistics from "./components/statistics-module/home-statistics";
+=======
+import ParallaxDisplay from "./components/parallax-module/parallax-display";
+>>>>>>> 857b3a033bc4bce1d23637f38b14e6ff3476eefb
 
 export default function page() {
   const router = useRouter();
@@ -25,14 +29,20 @@ export default function page() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 35000000);
+    }, 3500);
   }, []);
 
   return (
-    <main>
+    <main className="overflow-hidden">
       {/* {isLoading && <LoadingComponent timeline={timeline} />} */}
+<<<<<<< HEAD
       <HomeComponent />
       <HomeStatistics/>
+=======
+
+      {/* <HomeComponent /> */}
+      <ParallaxDisplay/>
+>>>>>>> 857b3a033bc4bce1d23637f38b14e6ff3476eefb
     </main>
   );
 }
