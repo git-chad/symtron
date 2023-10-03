@@ -15,7 +15,8 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "sass": "^1.68.0"
+    "sass": "^1.68.0",
+    "split-type": "^0.3.3"
   },
   "devDependencies": {
     "autoprefixer": "latest",

@@ -1,23 +1,26 @@
-const { useEffect, useState } = require("react");
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-const useDimension = () => {
-  const [dimension, setDimension] = useState({ width: 0, height: 0 });
+gsap.registerPlugin(ScrollTrigger)
 
-  const updateDimension = () => {
-    const { innerWidth, innerHeight } = window;
-    setDimension({ width: innerWidth, height: innerHeight });
-  };
-
-  useEffect(() => {
-    updateDimension();
-
-    window.addEventListener("resize", updateDimension);
-
-    return () => {
-      window.removeEventListener("resize", updateDimension);
-    };
-  }, []);
-  return dimension;
-};
-
-export default useDimension;
+export const animInfo = (infoRef) => {
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: infoRef,
+            start: 'top center',
+            toggleActions: 'play reverse play reverse'
+        }
+    });
+  
+    tl.set(infoRef, {
+      scale: 0.98,
+      opacity: 0
+    })
+    .to(infoRef, {
+        scale: 1,
+        opacity: 1,
+        duration: 1
+    })
+  
+    return 
+  }

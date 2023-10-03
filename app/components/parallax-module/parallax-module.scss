@@ -51,10 +51,11 @@
 }
 
 .info-wrapper {
+    opacity: 0%;
     h1 {
-        font-size: min(6vw, 64px);
+        font-size: min(8vw, 64px);
         line-height: 95%;
-        width: min(80%, 800px);
+        width: min(90vw, 800px);
     }
 
     h3 {
