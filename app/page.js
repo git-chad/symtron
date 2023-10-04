@@ -7,6 +7,7 @@ import LoadingComponent from "./components/loading-module/loading-component";
 import HomeComponent from "./components/home-module/home-component";
 import ParallaxDisplay from "./components/parallax-module/parallax-display";
 import HomeStatistics from "./components/statistics-module/home-statistics";
+import HomeService from "./components/service-module/home-service";
 
 export default function page() {
   const router = useRouter();
@@ -35,6 +36,7 @@ export default function page() {
       <HomeComponent /> 
       <ParallaxDisplay />
       <HomeStatistics />
+      <HomeService />
     </main>
   );
 }
