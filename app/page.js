@@ -46,7 +46,7 @@ export default function page() {
 
   return (
     <main className="overflow-hidden">
-      {isLoading && <LoadingComponent timeline={timeline} />}
+      {/* {isLoading && <LoadingComponent timeline={timeline} />} */}
 
       <HomeComponent />
       <ParallaxDisplay />

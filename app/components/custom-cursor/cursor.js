@@ -56,7 +56,7 @@ const Cursor = () => {
   return (
     <div
       ref={ref}
-      className="custom-cursor fixed top-0 left-0 w-[25px] h-[25px] rounded-full pointer-events-none"
+      className="custom-cursor lg:block hidden fixed top-0 left-0 w-[25px] h-[25px] rounded-full pointer-events-none"
       style={{ zIndex: 200, transformOrigin: "center center" }} // Ensure the cursor scales from its center
     ></div>
   );

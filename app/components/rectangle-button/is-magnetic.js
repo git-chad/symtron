@@ -19,7 +19,7 @@ const IsMagnetic = ({ children }) => {
 
     useEffect(() => {
         const element = internalRef.current;
-        if (!element) return; // Exit if no ref
+        if (!element) return; 
 
         const xTo = gsap.quickTo(element, "x", { duration: 1, ease: "elastic.out(1, 0.4)" });
         const yTo = gsap.quickTo(element, "y", { duration: 1, ease: "elastic.out(1, 0.4)" });

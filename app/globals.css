@@ -27,3 +27,13 @@ body {
     mix-blend-mode: difference;
     background-color: white;
 }
+
+nav {
+    transition: transform 0.3s cubic-bezier(0.86,0,0.07,1);
+    transform: translateY(0);
+}
+
+.translate-y-navbar {
+    transform: translateY(-100%)
+}
+
