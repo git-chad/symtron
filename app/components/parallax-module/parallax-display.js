@@ -37,7 +37,7 @@ const ParallaxDisplay = () => {
   }, []);
 
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col mt-36">
       {/* <div className="spacer"></div> */}
       <div ref={container} className="wrapper h-screen">
         <Column images={[images[0], images[1], images[2]]} y={y} />

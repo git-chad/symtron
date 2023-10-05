@@ -10,6 +10,8 @@ import HomeComponentAlt from "./components/home-module/home-component-alt";
 import ParallaxDisplay from "./components/parallax-module/parallax-display";
 import HomeStatistics from "./components/statistics-module/home-statistics";
 import Cursor from "./components/custom-cursor/cursor";
+import ServiceSection from "./components/service-module/home-service";
+import ClientsComponent from "./components/client-module/clients-component";
 
 export default function page() {
   const router = useRouter();
@@ -48,10 +50,11 @@ export default function page() {
     <main className="overflow-hidden">
       {/* {isLoading && <LoadingComponent timeline={timeline} />} */}
 
-      {/* <HomeComponent /> */}
       <HomeComponentAlt/>
       <ParallaxDisplay />
       <HomeStatistics />
+      <ClientsComponent/>
+      <ServiceSection/>
       
       <Cursor stickyBtn={stickyBtn} />
 
