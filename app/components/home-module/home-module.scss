@@ -18,3 +18,16 @@
         opacity: 0%;
     }
 }
+
+.alt-home {
+    h1, h2 {
+        font-size: min(7vw, 96px);
+    }
+
+    p {
+        font-size: min(4vw, 24px);
+        line-height: 95%;
+        font-weight: 100;
+        text-wrap: balance;
+    }
+}

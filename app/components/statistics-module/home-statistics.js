@@ -16,9 +16,9 @@ const overpass = Overpass({
   
   const HomeStadistics = () => {
     return (
-      <div className="flex justify-center items-center h-[75vh] ">
+      <div className="flex justify-center items-center h-[75vh]">
       <div className="flex"> 
-        <div className="w-1/2 p-8 ">
+        <div className="w-1/2 p-8">
           <h2 className={`${cairo.className} text-5xl font-black`}>
             Latin America’s leading<br /> distributor
           </h2>
