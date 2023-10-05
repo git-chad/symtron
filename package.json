@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.26",
     "framer-motion": "^10.16.4",
     "gsap": "^3.12.2",
     "motion": "^10.16.4",
     "next": "latest",
+    "plaiceholder": "^3.0.0",
     "react": "latest",
     "react-dom": "latest",
     "sass": "^1.68.0",

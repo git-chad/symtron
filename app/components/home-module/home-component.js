@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import { Cairo } from "next/font/google";
 import "./home-module.scss";
-import SvgBackground from "./svg-background";
+
 import { animateTitle, animateSubtitle, animateP } from "./home-anims";
 
 const cairo = Cairo({
@@ -42,9 +42,6 @@ const HomeComponent = () => {
           and boosts project productivity.
         </p>
       </div>
-      {/* <div className="absolute -z-10 bg-red-50 w-screen bottom-0 flex flex-row items-center justify-center overflow-hidden">
-        <SvgBackground />
-      </div> */}
     </div>
   );
 };

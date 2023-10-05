@@ -7,6 +7,7 @@ import SymtronCarousel from "./symtron-carousel";
 import { Cairo } from "next/font/google";
 import LineBreak from "../line-break";
 import { animInfo } from "./parallax-anims";
+import RectangleButton from "../rectangle-button/rectangle-btn";
 
 const cairo = Cairo({
   weight: "variable",
@@ -18,7 +19,7 @@ const images = ["/kmm1.jpg", "/kmm2.jpg", "/kmm3.jpg"];
 const ParallaxDisplay = () => {
   const infoRef = useRef(null);
   const container = useRef(null);
-  const animTimeline = useRef(null);
+  const stickyBtn = useRef(null);
 
   const { height } = useDimension();
   const { scrollYProgress } = useScroll({
@@ -32,11 +33,11 @@ const ParallaxDisplay = () => {
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
 
   useEffect(() => {
-    animInfo(infoRef.current)
+    animInfo(infoRef.current);
   }, []);
 
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col mt-36">
       {/* <div className="spacer"></div> */}
       <div ref={container} className="wrapper h-screen">
         <Column images={[images[0], images[1], images[2]]} y={y} />
@@ -46,11 +47,9 @@ const ParallaxDisplay = () => {
       </div>
       {/* <div className="spacer"></div> */}
       <div className="info-wrapper" ref={infoRef}>
-        <SymtronCarousel />
-        <div className=" h-[48vh] flex flex-col justify-center items-center">
-          <h1
-            className={`${cairo.className} w-[42vw] text-center`}
-          >
+          <SymtronCarousel />
+        <div className="mt-[48px] h-[50vh] flex flex-col justify-center items-center">
+          <h1 className={`${cairo.className} w-[42vw] text-center`}>
             Innovative Design Meets Functional Excellence.
           </h1>
           <h3 className="mt-[48px] text-center">
@@ -58,8 +57,9 @@ const ParallaxDisplay = () => {
             products are a blend of innovation, functionality, and modern
             design.
           </h3>
-
-          <button className="mt-[64px] underline">PRODUCTS PAGE BTN</button>
+          <div className="my-[48px]">
+            <RectangleButton href={"/products"} label={"Learn more"} magneticEffect={true}/>
+          </div>
           <LineBreak />
         </div>
       </div>

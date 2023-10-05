@@ -3,6 +3,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger)
 
+//animations for info block below parallax scroll section
 export const animInfo = (infoRef) => {
     const tl = gsap.timeline({
         scrollTrigger: {
@@ -19,7 +20,7 @@ export const animInfo = (infoRef) => {
     .to(infoRef, {
         scale: 1,
         opacity: 1,
-        duration: 1
+        duration: 0.5
     })
   
     return 
