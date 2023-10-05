@@ -52,8 +52,9 @@ export default function page() {
       <HomeComponentAlt/>
       <ParallaxDisplay />
       <HomeStatistics />
-
+      
       <Cursor stickyBtn={stickyBtn} />
+
     </main>
   );
 }
