@@ -27,7 +27,7 @@ const SideBar = ({ sidebarRef, linksRef, isActive }) => {
         </li>
       </ul>
 
-      <div className="w-full h-[40%] text-white flex flex-col justify-between ml-12 relative">
+      <div className="w-full h-[40%] text-white flex flex-col justify-between ml-12 relative text-sm sm:text-xl">
         <div className="phones">
           <h3>Phone</h3>
           <p className="mb-4">&#40;+54&#41; 11 5263 3232</p>

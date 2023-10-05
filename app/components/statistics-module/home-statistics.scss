@@ -1,14 +1,14 @@
-/* Aplicar la fuente Cairo a h2 */
-h2 {
-    font-family: 'Cairo', sans-serif;
-  }
-  
-  /* Aplicar la fuente Overpass a p y h3 */
-  p, h3 {
-    font-family: 'Overpass', sans-serif;
+.statistics-component {
+  h1 {
+        font-size: min(8vw, 64px);
+        line-height: 95%;
+        width: min(90vw, 800px);
   }
 
-  .paragraph-with-line-breaks {
-    margin-bottom: 3rem; /* Ajusta este valor según tu diseño */
+  p{
+    font-size: min(4vw, 24px);
+    font-weight: 400;
+    width: min(80%, 600px);
+    text-wrap: balance;
   }
-  
+}
