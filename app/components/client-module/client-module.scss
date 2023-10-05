@@ -1,0 +1,21 @@
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-218%);
+        -webkit-transform: translateX(-218%);
+        -moz-transform: translateX(-218%);
+        -ms-transform: translateX(-218%);
+        -o-transform: translateX(-218%);
+}
+}
+
+.logos-slide {
+    animation: 25s slide infinite linear;
+    -webkit-animation: 25s slide infinite linear;
+}
+
+img {
+    flex: none;
+}

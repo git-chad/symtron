@@ -48,12 +48,11 @@ export default function page() {
 
   return (
     <main className="overflow-hidden">
-      {/* {isLoading && <LoadingComponent timeline={timeline} />} */}
+      {isLoading && <LoadingComponent timeline={timeline} />}
 
       <HomeComponentAlt/>
       <ParallaxDisplay />
       <HomeStatistics />
-      <ClientsComponent/>
       <ServiceSection/>
       
       <Cursor stickyBtn={stickyBtn} />
