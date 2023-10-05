@@ -20,13 +20,16 @@
 }
 
 .alt-home {
+
+    // background-image: url("/grid-home-alt.svg");
+    // background-repeat: repeat;
+
     h1, h2 {
-        font-size: min(7vw, 96px);
+        font-size: min(10vw, 96px);
     }
 
     p {
-        font-size: min(4vw, 24px);
-        line-height: 95%;
+        font-size: min(5vw, 24px);
         font-weight: 100;
         text-wrap: balance;
     }

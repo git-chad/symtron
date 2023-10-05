@@ -9,10 +9,14 @@ const Navbar = () => {
 
   useEffect(() => {
     const distanceCheck = () => {
-      if (window.scrollY > 600) {
+      if (window.innerWidth <= 768) {
+        setShowMobileMenu(true);
+        return;
+      }
+
+      if (window.scrollY > 300) {
         setShowMobileMenu(true);
         setHideNavbar(true);
-        // console.log('passed 600 px');
       } else {
         setShowMobileMenu(false);
         setHideNavbar(false);
@@ -20,18 +24,20 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", distanceCheck);
+    window.addEventListener("resize", distanceCheck);
     return () => {
       window.removeEventListener("scroll", distanceCheck);
+      window.removeEventListener("resize", distanceCheck);
     };
   }, []);
 
   return (
     <>
       <nav
-        className={`z-30 md:flex hidden  justify-between items-center fixed top-0 left-0 w-screen h-[64px] bg-white shadow-md ${
-          hideNavbar ? "translate-y-navbar" : ""
-        }`}
-      >
+  className={`z-30 md:flex hidden justify-between items-center fixed top-0 left-0 w-screen h-[64px] bg-opacity-[0.1] backdrop-blur-md shadow-md ${
+    hideNavbar ? "translate-y-navbar" : ""
+  }`}
+>
         <div className="logo ml-12">Symtron</div>
         <div className="nav-items flex">
           <ul className="flex items-center justify-center space-x-8 px-8">
