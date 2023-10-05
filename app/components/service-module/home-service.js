@@ -22,7 +22,9 @@ const overpass = Overpass({
                 <h2 className={`${cairo.className} text-3xl font-extralight mt-6`}>01</h2>
                 <h3 className={`${cairo.className} text-3xl font-semibold mt-6`}>Sector Strategies</h3>
                 <p className={`${overpass.className} mt-4 mb-4`}>Different markets demand creative solutions. At Symtron, we collaborate to craft innovative products tailored to our clients&apos; needs.</p>
-                <Image src="/image3.png" width={320} height={500} alt="Picture of the author" />
+                <div className="w-0 h-1/2">
+                <Image src="/image3.png" fill alt="Picture of the author" />
+                </div>
               </section>
               <section className="mr-4">
                 <h2 className={`${cairo.className} text-3xl font-extralight mt-6`}>02</h2>
