@@ -12,6 +12,7 @@ import HomeStatistics from "./components/statistics-module/home-statistics";
 import Cursor from "./components/custom-cursor/cursor";
 import ServiceSection from "./components/service-module/home-service";
 import ClientsComponent from "./components/client-module/clients-component";
+import Footer from "./components/footer-module/footer";
 
 export default function page() {
   const router = useRouter();
@@ -55,9 +56,9 @@ export default function page() {
       <HomeStatistics />
       <ClientsComponent/>
       <ServiceSection/>
-      
       <Cursor stickyBtn={stickyBtn} />
-
+      <Footer />
     </main>
   );
 }
+
