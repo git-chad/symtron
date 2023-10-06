@@ -1,12 +1,26 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import ProductsComponent from '../components/products-module/products-component'
-import VerticalSection from '../components/products-module/vertical-section'
+import Lenis from '@studio-freight/lenis'
 
 const page = () => {
+
+  useEffect(() => {
+    // lenis-smooth scroll, re-use in every page!
+    const lenis = new Lenis();
+
+    // smooth scroll function
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, [])
+
   return (
     <div className=''>
         <ProductsComponent/>    
-        {/* <VerticalSection/> */}
     </div>
   )
 }

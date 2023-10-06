@@ -2,6 +2,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import RectangleButton from "../rectangle-button/rectangle-btn";
 import MenuComponent from "./button-component";
+import Link from "next/link";
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -38,20 +39,20 @@ const Navbar = () => {
     hideNavbar ? "translate-y-navbar" : ""
   }`}
 >
-        <div className="logo ml-12">Symtron</div>
+        <Link href='/' className="logo ml-12">Symtron</Link>
         <div className="nav-items flex">
           <ul className="flex items-center justify-center space-x-8 px-8">
             <li className="cursor-pointer">
-              <a>Products</a>
+              <Link href='/products'>Products</Link>
             </li>
             <li className="cursor-pointer">
-              <a>Solutions</a>
+              <Link href='#'>Solutions</Link>
             </li>
             <li className="cursor-pointer">
-              <a>About us</a>
+              <Link href='#'>About us</Link>
             </li>
             <li className="cursor-pointer">
-              <a>Service</a>
+              <Link href='#'>Service</Link>
             </li>
           </ul>
 

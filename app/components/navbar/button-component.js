@@ -5,6 +5,7 @@ import SideBar from "./side-bar";
 const MenuComponent = ({showMobileMenu}) => {
 
   const [isActive, setIsActive] = useState(false);
+  const [isSidebarActive, setSidebarActive] = useState(false);
   const sidebarRef = useRef(null);
   const linksRef = useRef([])
 
@@ -13,6 +14,10 @@ const MenuComponent = ({showMobileMenu}) => {
       setIsActive(false)
     }
   }, [showMobileMenu]);
+
+  const closeSidebar = () => {
+    setIsActive(false);
+  };
 
   return (
     <>
@@ -24,7 +29,7 @@ const MenuComponent = ({showMobileMenu}) => {
       >
         <div className={`${isActive ? "menu-active" : ""} icon`}></div>
       </a>
-       <SideBar sidebarRef={sidebarRef} linksRef={linksRef} isActive={isActive} />
+       <SideBar sidebarRef={sidebarRef} linksRef={linksRef} isActive={isActive} closeSidebar={closeSidebar} />
     </>
   );
 };
