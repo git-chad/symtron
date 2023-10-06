@@ -54,7 +54,7 @@ export default function Page() {
       <HomeComponentAlt/>
       <ParallaxDisplay />
       <HomeStatistics />
-      {/* <ServiceSection/> */}
+      <ServiceSection/>
       <Cursor stickyBtn={stickyBtn} />
       <Footer />
     </main>

@@ -1,65 +1,63 @@
 import React from "react";
 import { Cairo } from "next/font/google";
-import { Overpass } from "next/font/google";
+import "./service-module.scss";
 import Image from "next/image";
 
 const cairo = Cairo({
-    weight: ["variable"],
-    subsets: ["latin"],
-    });
-const overpass = Overpass({
-    weight: ["variable"],
-    subsets: ["latin"],
-    });
+  weight: ["variable"],
+  subsets: ["latin"],
+});
 
-    const ServiceSection = () => {
-      
-        return (
-          <main className="flex flex-col m-8">
-            <h1 className={`${cairo.className} text-5xl font-extrabold mt-6`}>Industry-Specific Solutions</h1>
-            <div className="flex mt-8">
-              <section className="mr-4 ">
-                <h2 className={`${cairo.className} text-3xl font-extralight mt-6`}>01</h2>
-                <h3 className={`${cairo.className} text-3xl font-semibold mt-6`}>Sector Strategies</h3>
-                <p className={`${overpass.className} mt-4 mb-4`}>Different markets demand creative solutions. At Symtron, we collaborate to craft innovative products tailored to our clients&apos; needs.</p>
-                <div className="w-0 h-1/2">
-                <Image src="/image3.png" fill alt="Picture of the author" />
-                </div>
-              </section>
-              <section className="mr-4">
-                <h2 className={`${cairo.className} text-3xl font-extralight mt-6`}>02</h2>
-                <h3 className={`${cairo.className} text-3xl font-semibold mt-6`}>Banking Solutions</h3>
-                <p className={`${overpass.className} mt-4 mb-4`}>In the fast-paced world of finance, Symtron delivers secure and intuitive technologies to keep financial entities at the forefront.</p>
-                <Image src="/image4.png" width={320} height={500} alt="Picture of the author" />
-              </section>
-              <section className="mr-4 h-48">
-                <h2 className={`${cairo.className} text-3xl font-extralight mt-6`}>03</h2>
-                <h3 className={`${cairo.className} text-3xl font-semibold mt-6`}>Commerce Innovation</h3>
-                <p className={`${overpass.className} mt-4 mb-4`}>Blending fun with functionality, Symtron brings the latest in entertainment technology, enhancing user experiences and audience engagement.</p>
-                <Image src="/image5.png" width={320} height={500} alt="Picture of the author" />
-              </section>
-              <section className="">
-                <h2 className={`${cairo.className} text-3xl font-extralight mt-6`}>04</h2>
-                <h3 className={`${cairo.className} text-3xl font-semibold mt-6`}>Entertainment Tech</h3>
-                <p className={`${overpass.className} mt-4 mb-4`}>Retail landscapes are ever-changing. Symtron&apos;s solutions adapt and evolve, ensuring retailers stay competitive and customer-focused.</p>
-                <Image src="/image7.png" width={320} height={500} alt="Picture of the author" />
-              </section>
+const services = [
+  {
+    number: '01',
+    title: 'Sector Strategies',
+    description: 'Different markets demand creative solutions. At Symtron, we collaborate to craft innovative products tailored to our clients&apos; needs.',
+    image: 'image3.png'
+  },
+  {
+    number: '02',
+    title: 'Banking Solutions',
+    description: 'In the fast-paced world of finance, Symtron delivers secure and intuitive technologies to keep financial entities at the forefront.',
+    image: 'image4.png'
+  },
+  {
+    number: '03',
+    title: 'Commerce Innovation',
+    description: 'Blending fun with functionality, Symtron brings the latest in entertainment technology, enhancing user experiences and audience engagement.',
+    image: 'image5.png'
+  },
+  {
+    number: '04',
+    title: 'Entertainment Techs',
+    description: 'Retail landscapes are ever-changing. Symtron&apos; solutions adapt and evolve, ensuring retailers stay competitive and customer-focused.',
+    image: 'image7.png'
+  },
+];
+
+const ServiceSection = () => {
+  return (
+    <main className="service-component h-[75vh] w-screen flex flex-col justify-center">
+      <h1 className={`${cairo.className} ml-8`}>Industry-Specific Solutions</h1>
+      <div className="flex justify-between p-8 items-center flex-wrap">
+        {services.map((service, index) => (
+          <section key={index} className="flex flex-col items-center justify-center mb-4 w-full md:w-[48%] lg:w-[24%] bg-red-50 h-full">
+            <div className="flex flex-col w-[500px]">
+              <h2 className="font-extralight mt-4">{service.number}</h2>
+              <h3 className={`${cairo.className} font-bold mt-8`}>{service.title}</h3>
+              <p className="text-justify my-8">{service.description}</p>
+              <div className="image-wrapper">
+                <Image src={`/${service.image}`} width={600} height={0} />
+              </div>
             </div>
-          </main>
-        );
+          </section>
+        ))}
+      </div>
+    </main>
+  );
+};
+
+export default ServiceSection;
 
 
 
-
-           
-          
-    };
-        
-        export default ServiceSection;
-
-        
-        
-        
-        
-        
-        
