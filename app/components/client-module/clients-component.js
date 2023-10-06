@@ -1,4 +1,5 @@
 import "./client-module.scss";
+import Image from "next/image";
 
 const ClientsComponent = () => {
 
@@ -10,18 +11,24 @@ const ClientsComponent = () => {
     <div className="w-screen h-[35vh] flex items-center overflow-hidden relative">
       <div className="flex logos-slide">
         {imageNumbers.map((num) => (
-          <img
-            className="mx-12 w-[200px]" // added margin for gap between images
+          <Image
+            key={num} 
+            className="mx-12"
             src={`https://www.symtron.com.ar/images/marcas/${num}.png`}
             alt={`Client Image ${num}`}
+            width={200} 
+            height={100} 
           />
         ))}
 
         {imageNumbers.map((num) => (
-          <img
-            className="mx-12 w-[200px]" // added margin for gap between images
+          <Image
+            key={num}
+            className="mx-12"
             src={`https://www.symtron.com.ar/images/marcas/${num}.png`}
             alt={`Client Image ${num}`}
+            width={200} 
+            height={100} 
           />
         ))}
       </div>

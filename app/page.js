@@ -14,7 +14,7 @@ import ServiceSection from "./components/service-module/home-service";
 import ClientsComponent from "./components/client-module/clients-component";
 import Footer from "./components/footer-module/footer";
 
-export default function page() {
+export default function Page() {
   const router = useRouter();
   const [timeline, setTimeline] = useState(null);
   const [isLoading, setIsLoading] = useState(true);

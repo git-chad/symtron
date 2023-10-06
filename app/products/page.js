@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import ProductsComponent from '../components/products-module/products-component'
 import Lenis from '@studio-freight/lenis'
 
-const page = () => {
+const Page = () => {
 
   useEffect(() => {
     // lenis-smooth scroll, re-use in every page!
@@ -25,4 +25,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

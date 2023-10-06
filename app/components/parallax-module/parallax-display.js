@@ -51,7 +51,7 @@ const ParallaxDisplay = () => {
             Innovative Design Meets Functional Excellence.
           </h1>
           <h3 className="mt-[48px] text-center">
-            Discover Symtron's cutting-edge range of ATMs, kiosks, and more. Our
+            Discover Symtron&apos;s cutting-edge range of ATMs, kiosks, and more. Our
             products are a blend of innovation, functionality, and modern
             design.
           </h3>
