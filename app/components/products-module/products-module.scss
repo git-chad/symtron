@@ -1,0 +1,16 @@
+.section-family {
+    h1 {
+        font-size: min(12vw, 120px);
+        line-height: 95%;
+    }
+
+    h2 {
+        font-size: min(4vw, 32px);
+        text-wrap: balance;
+        line-height: 95%;
+    }
+
+    p {
+        font-size: min(5vw, 18px);
+    }
+}

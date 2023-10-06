@@ -1,10 +1,11 @@
 import React from "react";
+import Link from "next/link";
 import "./navbar-component.scss";
 import icon1 from "../../../public/Frame.svg";
 import icon2 from "../../../public/Frame-1.svg";
 import Image from "next/image";
 
-const SideBar = ({ sidebarRef, linksRef, isActive }) => {
+const SideBar = ({ sidebarRef, linksRef, isActive, closeSidebar }) => {
   return (
     <div
       ref={sidebarRef}
@@ -13,17 +14,20 @@ const SideBar = ({ sidebarRef, linksRef, isActive }) => {
       }`}
     >
       <ul className="w-full h-full flex flex-col justify-center text-white text-[48px] font-bold ml-12 space-y-8">
-        <li className="cursor-pointer" ref={(el) => (linksRef.current[0] = el)}>
-          <a>Products</a>
+        <li className="cursor-pointer" ref={(el) => (linksRef.current[0] = el)} onClick={closeSidebar}>
+          <Link href="/">Home</Link>
         </li>
-        <li className="cursor-pointer" ref={(el) => (linksRef.current[1] = el)}>
-          <a>Solutions</a>
+        <li className="cursor-pointer" ref={(el) => (linksRef.current[1] = el)} onClick={closeSidebar}>
+          <Link href="/products">Products</Link>
         </li>
-        <li className="cursor-pointer" ref={(el) => (linksRef.current[2] = el)}>
-          <a>About us</a>
+        <li className="cursor-pointer" ref={(el) => (linksRef.current[2] = el)} onClick={closeSidebar}>
+          <Link href="/">Solutions</Link>
         </li>
-        <li className="cursor-pointer" ref={(el) => (linksRef.current[3] = el)}>
-          <a>Service</a>
+        <li className="cursor-pointer" ref={(el) => (linksRef.current[3] = el)} onClick={closeSidebar}>
+          <Link href="/">About us</Link>
+        </li>
+        <li className="cursor-pointer" ref={(el) => (linksRef.current[4] = el)} onClick={closeSidebar}>
+          <Link href="/">Service</Link>
         </li>
       </ul>
 

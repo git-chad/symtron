@@ -7,7 +7,7 @@ const RectangleButton = (props) => {
 
   if (!magneticEffect) {
     return (
-      <a
+      <Link
         href={href}
         className="rect-btn flex justify-between items-center magnetic-button"
         onClick={onClick}
@@ -22,13 +22,13 @@ const RectangleButton = (props) => {
         >
           <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
         </svg>
-      </a>
+      </Link>
     );
   }
 
   return (
     <IsMagnetic>
-      <a
+      <Link
         href={href}
         className="rect-btn flex justify-between items-center magnetic-button"
         onClick={onClick}
@@ -43,7 +43,7 @@ const RectangleButton = (props) => {
         >
           <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z" />
         </svg>
-      </a>
+      </Link>
     </IsMagnetic>
   );
 };
