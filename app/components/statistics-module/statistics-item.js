@@ -70,9 +70,9 @@ const StatisticItem = ({ finalValue, text }) => {
       <h3 className={`${cairo.className} text-4xl sm:text-6xl font-black`}>
         {Math.round(animatedNumber)}<span className="font-light text-2xl sm:text-4xl">+</span>
       </h3>
-      <p className={`${overpass.className} mt-2 paragraph-with-line-breaks`}>
+      <span className={`${overpass.className} mt-2 paragraph-with-line-breaks`}>
         {text}
-      </p>
+      </span>
     </div>
   );
 };

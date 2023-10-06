@@ -37,9 +37,9 @@ const services = [
 
 const ServiceSection = () => {
   return (
-    <main className="service-component h-[75vh] w-screen flex flex-col justify-center">
+    <main className="service-component h-screen flex flex-col justify-center">
       <h1 className={`${cairo.className} ml-8`}>Industry-Specific Solutions</h1>
-      <div className="flex justify-between p-8 items-center flex-wrap">
+      <div className="flex justify-between p-8 items-center flex-row">
         {services.map((service, index) => (
           <section key={index} className="flex flex-col items-center justify-center mb-4 w-full md:w-[48%] lg:w-[24%] bg-red-50 h-full">
             <div className="flex flex-col w-[500px]">
@@ -47,7 +47,7 @@ const ServiceSection = () => {
               <h3 className={`${cairo.className} font-bold mt-8`}>{service.title}</h3>
               <p className="text-justify my-8">{service.description}</p>
               <div className="image-wrapper">
-                <Image src={`/${service.image}`} width={600} height={0} />
+                <Image src={`/${service.image}`} width={400} height={0} />
               </div>
             </div>
           </section>

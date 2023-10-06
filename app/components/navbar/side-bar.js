@@ -13,7 +13,7 @@ const SideBar = ({ sidebarRef, linksRef, isActive, closeSidebar }) => {
         isActive ? "active-sidebar" : ""
       }`}
     >
-      <ul className="w-full h-full flex flex-col justify-center text-white text-[48px] font-bold ml-12 space-y-8">
+      <ul className="w-full h-full flex flex-col justify-center text-white text-[36px] font-bold ml-12 space-y-8">
         <li className="cursor-pointer" ref={(el) => (linksRef.current[0] = el)} onClick={closeSidebar}>
           <Link href="/">Home</Link>
         </li>
@@ -31,7 +31,7 @@ const SideBar = ({ sidebarRef, linksRef, isActive, closeSidebar }) => {
         </li>
       </ul>
 
-      <div className="w-full h-[40%] text-white flex flex-col justify-between ml-12 relative text-sm sm:text-xl">
+      <div className="w-full h-[40%] text-white flex flex-col justify-between ml-12 relative text-[12px] sm:text-[16px] 2xl:text-2xl">
         <div className="phones">
           <h3>Phone</h3>
           <p className="mb-4">&#40;+54&#41; 11 5263 3232</p>

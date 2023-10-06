@@ -23,7 +23,7 @@ const MenuComponent = ({showMobileMenu}) => {
     <>
       <a
         onClick={() => setIsActive(!isActive)}
-        className={`mobile-menu z-50 fixed top-4 right-4 sm:top-12 sm:right-12 w-16 h-16 lg:w-32 lg:h-32 rounded-full text-white  flex items-center justify-center cursor-pointer ${
+        className={`mobile-menu z-50 fixed top-4 right-4 sm:top-12 sm:right-12 w-16 h-16 2xl:w-32 2xl:h-32 rounded-full text-white  flex items-center justify-center cursor-pointer ${
           showMobileMenu ? "scale-up-menu" : ""
         } ${isActive ? "color-swap" : "bg-[#1e2124]"}`}
       >

@@ -2,17 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  overflow-y: scroll;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
-}
 body {
   background-color: white;
-  overflow-y: visible;
-  position: relative;
-  overflow-x: hidden;
 }
 
 .horizontal-line {

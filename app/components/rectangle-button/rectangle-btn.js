@@ -33,7 +33,7 @@ const RectangleButton = (props) => {
         className="rect-btn flex justify-between items-center magnetic-button"
         onClick={onClick}
       >
-        <p className="font-bold pointer-events-none">{label || "Learn more"}</p>
+        <p className="font-bold pointer-events-none text-xl">{label || "Learn more"}</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="24"
