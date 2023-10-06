@@ -38,16 +38,14 @@ const ParallaxDisplay = () => {
 
   return (
     <main className="flex flex-col mt-36">
-      {/* <div className="spacer"></div> */}
       <div ref={container} className="wrapper h-screen">
         <Column images={[images[0], images[1], images[2]]} y={y} />
         <Column images={[images[1], images[2], images[0]]} y={y2} />
         <Column images={[images[2], images[0], images[1]]} y={y3} />
         <Column images={[images[2], images[1], images[0]]} y={y4} />
       </div>
-      {/* <div className="spacer"></div> */}
-      <div className="info-wrapper" ref={infoRef}>
-          <SymtronCarousel />
+      <div className="relative info-wrapper" ref={infoRef}>
+        <SymtronCarousel />
         <div className="mt-[48px] h-[50vh] flex flex-col justify-center items-center">
           <h1 className={`${cairo.className} w-[42vw] text-center`}>
             Innovative Design Meets Functional Excellence.
@@ -58,7 +56,11 @@ const ParallaxDisplay = () => {
             design.
           </h3>
           <div className="my-[48px]">
-            <RectangleButton href={"/products"} label={"Learn more"} magneticEffect={true}/>
+            <RectangleButton
+              href={"/products"}
+              label={"Learn more"}
+              magneticEffect={true}
+            />
           </div>
           <LineBreak />
         </div>

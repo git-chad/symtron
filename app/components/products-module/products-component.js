@@ -37,9 +37,9 @@ const ProductsComponent = () => {
           trigger: sliderRef.current,
           pin: true,
           scrub: 1,
-          snap: 1 / (sections.length - 1),
+          // snap: 1 / (sections.length - 1),
           end: () => "+=" + sliderRef.current.offsetWidth,
-          markers: true,
+          markers: false,
         },
       });
     }, componentRef);
