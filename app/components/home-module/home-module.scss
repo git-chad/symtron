@@ -1,36 +1,33 @@
-.home-module {
-    h1 {
-        font-size: min(14vw, 320px);
-        font-weight: 900;
-        opacity: 0%;
-    }
+// .home-module {
+//     h1 {
+//         font-size: min(14vw, 320px);
+//         font-weight: 900;
+//         opacity: 0%;
+//     }
 
-    h2 {
-        font-size: min(7vw, 96px);
-        font-weight: 700;
-        opacity: 0%;
-    }
+//     h2 {
+//         font-size: min(7vw, 96px);
+//         font-weight: 700;
+//         opacity: 0%;
+//     }
 
-    p {
-        font-size: min(4vw, 24px);
-        line-height: 95%;
-        text-wrap: balance;
-        opacity: 0%;
-    }
-}
+//     p {
+//         font-size: min(4vw, 24px);
+//         line-height: 95%;
+//         text-wrap: balance;
+//         opacity: 0%;
+//     }
+// }
 
 .alt-home {
 
-    // background-image: url("/grid-home-alt.svg");
-    // background-repeat: repeat;
-
     h1, h2 {
-        font-size: min(10vw, 96px);
+        font-size: min(12vw, 128px);
     }
 
     p {
-        font-size: min(5vw, 24px);
-        font-weight: 100;
+        font-size: min(5vw, 36px);
+        font-weight: 200;
         text-wrap: balance;
     }
 }
