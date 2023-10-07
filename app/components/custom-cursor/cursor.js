@@ -7,11 +7,11 @@ const Cursor = () => {
 
   useEffect(() => {
     const xTo = gsap.quickTo(ref.current, "x", {
-      duration: 1,
+      duration: 0.6,
       ease: "elastic.out(1, 0.8)",
     });
     const yTo = gsap.quickTo(ref.current, "y", {
-      duration: 1,
+      duration: 0.6,
       ease: "elastic.out(1, 0.8)",
     });
 
