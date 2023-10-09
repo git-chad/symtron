@@ -8,7 +8,7 @@ const cairo = Cairo({
 
 const Footer = () => {
   return (
-    <main className="flex bg-[#1E2124] h-96 w-screen text-white">
+    <main className="lg:flex hidden bg-[#1E2124] h-96 w-screen text-white">
       <section className="flex flex-row border-r-2 border-l-white text-sm  w-[45%] ">
         <div className=" border-r-2  border-l-white w-[20%]">
           <div className="flex flex-col ml-4">
