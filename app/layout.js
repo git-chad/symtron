@@ -19,8 +19,8 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        {/* You can add other head elements here as required */}
       </Head>
+      
       <body className={`${overpass.className}`}>
         <Navbar />
         {children}
