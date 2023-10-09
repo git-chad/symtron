@@ -1,20 +1,20 @@
 .statistics-component {
   h1 {
-        font-size: min(6vw, 64px);
+        font-size: min(8vw, 64px);
         line-height: 95%;
         width: min(90vw, 800px);
         text-wrap: balance;
   }
 
   p{
-    font-size: min(3vw, 28px);
+    font-size: min(5vw, 28px);
     font-weight: 400;
     width: min(80%, 600px);
     text-wrap: balance;
   }
 
   span {
-    font-size: min(5vw, 28px);
+    font-size: min(3vw, 28px);
     text-wrap: balance;
     font-weight: 200;
   }

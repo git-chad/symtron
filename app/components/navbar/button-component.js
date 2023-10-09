@@ -5,7 +5,6 @@ import SideBar from "./side-bar";
 const MenuComponent = ({showMobileMenu}) => {
 
   const [isActive, setIsActive] = useState(false);
-  const [isSidebarActive, setSidebarActive] = useState(false);
   const sidebarRef = useRef(null);
   const linksRef = useRef([])
 

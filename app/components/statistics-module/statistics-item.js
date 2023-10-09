@@ -66,7 +66,7 @@ const StatisticItem = ({ finalValue, text }) => {
   }, [finalValue, startAnimation]);
 
   return (
-    <div className="p-4 flex flex-col sm:w-[400px] sm:h-[200px]" ref={intersectionRef}>
+    <div className="p-4 flex flex-col xl:w-[300px] sm:h-[20vh]" ref={intersectionRef}>
       <h3 className={`${cairo.className} text-4xl sm:text-6xl font-black`}>
         {Math.round(animatedNumber)}<span className="font-light text-2xl sm:text-4xl">+</span>
       </h3>

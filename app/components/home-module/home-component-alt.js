@@ -29,7 +29,7 @@ const HomeComponentAlt = () => {
   return (
     <div className="alt-home w-screen h-screen flex flex-col items-center justify-center">
       <div className="sm:w-[70%] sm:mt-36 flex flex-col z-10">
-        <h1 className={`${cairo.className} font-medium`}>
+        <h1 className={`${cairo.className} font-medium text-center sm:text-start leading-tight`}>
           Symtron<span className="font-light"> & Selfia</span>
         </h1>
 
@@ -39,7 +39,7 @@ const HomeComponentAlt = () => {
           <b className="underline">Join us and power up your work.</b>
         </p>
       </div>
-      <div className="sm:w-[70%] w-full sm:h-[50vw] h-[40%] relative mt-12 z-10">
+      <div className="sm:w-[70%] w-full sm:h-[75vw] h-[40%] relative mt-12 z-10">
         <Image fill objectFit="cover" src={heroimg} />
       </div>
       <Image

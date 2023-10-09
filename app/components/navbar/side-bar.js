@@ -9,7 +9,7 @@ const SideBar = ({ sidebarRef, linksRef, isActive, closeSidebar }) => {
   return (
     <div
       ref={sidebarRef}
-      className={`sidebar z-40 fixed top-0 right-0 w-[100%] md:w-[30%] h-full bg-[#1e2124] flex flex-col ${
+      className={`sidebar z-40 fixed top-0 right-0 w-[100%] lg:w-[30vw] h-full bg-[#1e2124] flex flex-col ${
         isActive ? "active-sidebar" : ""
       }`}
     >
