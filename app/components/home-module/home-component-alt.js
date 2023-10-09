@@ -45,7 +45,7 @@ const HomeComponentAlt = () => {
       <Image
         src={gbglobe}
         width={0}
-        className="absolute opacity-30 saturate-100 -left-60 2xl:scale-150"
+        className="absolute opacity-30 saturate-100 -left-60"
       />
     </div>
   );
