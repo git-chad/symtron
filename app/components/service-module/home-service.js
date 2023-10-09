@@ -47,7 +47,7 @@ const ServiceSection = () => {
         <h1 className={`${cairo.className} md:ml-8 text-center sm:text-start`}>
           Industry-Specific Solutions
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 p-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 p-8">
           {services.map((service, index) => (
             <section
               key={index}
