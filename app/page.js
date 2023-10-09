@@ -5,14 +5,11 @@ import { useEffect, useLayoutEffect, useState, useRef } from "react";
 import gsap from "gsap";
 import { useRouter } from "next/navigation";
 import LoadingComponent from "./components/loading-module/loading-component";
-import HomeComponent from "./components/home-module/home-component";
 import HomeComponentAlt from "./components/home-module/home-component-alt";
 import ParallaxDisplay from "./components/parallax-module/parallax-display";
 import HomeStatistics from "./components/statistics-module/home-statistics";
 import Cursor from "./components/custom-cursor/cursor";
 import ServiceSection from "./components/service-module/home-service";
-import ClientsComponent from "./components/client-module/clients-component";
-import Footer from "./components/footer-module/footer";
 
 export default function Page() {
   const router = useRouter();
@@ -54,9 +51,8 @@ export default function Page() {
       <HomeComponentAlt/>
       <ParallaxDisplay />
       <HomeStatistics />
-      {/* <ServiceSection/> */}
+      <ServiceSection/>
       <Cursor stickyBtn={stickyBtn} />
-      <Footer />
     </main>
   );
 }
