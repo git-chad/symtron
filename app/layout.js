@@ -1,9 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
-import Cursor from "./components/custom-cursor/cursor";
 import Navbar from "./components/navbar/navbar-component";
 import "./globals.css";
 import { Overpass } from "next/font/google";
+import Footer from './components/footer-module/footer';
 
 const overpass = Overpass({ subsets: ["latin"] });
 
@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
       <body className={`${overpass.className}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
