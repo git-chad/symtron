@@ -49,7 +49,7 @@ const Navbar = () => {
               <Link href='#'>Solutions</Link>
             </li>
             <li className="cursor-pointer">
-              <Link href='#'>About us</Link>
+              <Link href='/about'>About us</Link>
             </li>
             <li className="cursor-pointer">
               <Link href='#'>Service</Link>

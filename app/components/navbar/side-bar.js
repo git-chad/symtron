@@ -24,7 +24,7 @@ const SideBar = ({ sidebarRef, linksRef, isActive, closeSidebar }) => {
           <Link href="/">Solutions</Link>
         </li>
         <li className="cursor-pointer" ref={(el) => (linksRef.current[3] = el)} onClick={closeSidebar}>
-          <Link href="/">About us</Link>
+          <Link href="/about">About us</Link>
         </li>
         <li className="cursor-pointer" ref={(el) => (linksRef.current[4] = el)} onClick={closeSidebar}>
           <Link href="/">Service</Link>
@@ -45,7 +45,7 @@ const SideBar = ({ sidebarRef, linksRef, isActive, closeSidebar }) => {
             symtron@latam.com
           </a>
         </div>
-        <p>Pueyrredón 3831, Ciudadela, BA, AR</p>
+        <a target="_blank" href="https://maps.app.goo.gl/RJsdJquNKvwcDJGYA">Pueyrredón 3831, Ciudadela, BA, AR</a>
 
         <div className="icons flex mb-4 space-x-4 w-full">
           <Image src={icon2}></Image>

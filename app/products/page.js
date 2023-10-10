@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import ProductsComponent from '../components/products-module/products-component'
 import Lenis from '@studio-freight/lenis'
+import Cursor from '../components/custom-cursor/cursor'
 
 const Page = () => {
 
@@ -21,6 +22,7 @@ const Page = () => {
   return (
     <div className=''>
         <ProductsComponent/>    
+        <Cursor/>
     </div>
   )
 }
