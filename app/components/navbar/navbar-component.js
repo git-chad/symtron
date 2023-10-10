@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-  className={`z-30 md:flex hidden justify-between items-center fixed top-0 left-0 w-screen h-[64px] bg-opacity-[0.1] backdrop-blur-md shadow-md ${
+  className={`z-30 lg:flex hidden justify-between items-center fixed top-0 left-0 w-screen h-[64px] bg-opacity-[0.1] backdrop-blur-md shadow-md ${
     hideNavbar ? "translate-y-navbar" : ""
   }`}
 >
@@ -49,7 +49,7 @@ const Navbar = () => {
               <Link href='#'>Solutions</Link>
             </li>
             <li className="cursor-pointer">
-              <Link href='#'>About us</Link>
+              <Link href='/about'>About us</Link>
             </li>
             <li className="cursor-pointer">
               <Link href='#'>Service</Link>

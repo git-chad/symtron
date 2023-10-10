@@ -8,7 +8,7 @@ const cairo = Cairo({
 
 const Footer = () => {
   return (
-    <main className="flex bg-[#1E2124] h-96 w-screen text-white">
+    <footer className="lg:flex hidden bg-[#1E2124] h-[35vh] w-full text-white lg:mt-96">
       <section className="flex flex-row border-r-2 border-l-white text-sm  w-[45%] ">
         <div className=" border-r-2  border-l-white w-[20%]">
           <div className="flex flex-col ml-4">
@@ -18,7 +18,7 @@ const Footer = () => {
             >
               Products
             </Link>
-            <Link className="mt-4" href="#">
+            <Link className="mt-8" href="#">
               ATM
             </Link>
             <Link className="mt-3" href="#">
@@ -38,7 +38,7 @@ const Footer = () => {
             <h2 className={`${cairo.className} font-bold text-base mt-4`}>
               Solutions
             </h2>
-            <Link className="mt-4" href="#">
+            <Link className="mt-8" href="#">
               Sector Strategies
             </Link>
             <Link className="mt-3" href="#">
@@ -53,34 +53,35 @@ const Footer = () => {
           </div>
         </div>
         <div className="items-center allign-center text-start w-[41%]">
-          <div className="flex flex-col ml-8 mt-4 ">
+          <div className="flex flex-col ml-8 mt-4">
             <h2 className="font-bold text-base">Contact</h2>
-            <a className="mt-4" href="tel:+541152633232">
+            <a className="mt-8" href="tel:+541152633232">
               (+54) 11 5263 3232
             </a>
             <a className="mt-3" href="tel:+5408102203232">
               0810 220 3232
             </a>
-            <a
-              href="https://maps.app.goo.gl/RJsdJquNKvwcDJGYA"
-              className="mt-3"
-            >
-              Pueyrredón 3831 (CP 1702 ASQ)
-            </a>
-            <a
-              href="https://maps.app.goo.gl/RJsdJquNKvwcDJGYA"
-              className="mt-3"
-            >
-              Ciudadela, Buenos Aires, Argentina
-            </a>
             <a className="mt-3" href="mailto:symtron@latam.com">
               symtron@latam.com
             </a>
+            <a
+              href="https://maps.app.goo.gl/RJsdJquNKvwcDJGYA"
+              target="_blank"
+              className="mt-3"
+            >
+              Pueyrredón 3831 (CP 1702 ASQ),
+              <br />
+              Ciudadela, Buenos Aires, Argentina
+            </a>
+            <a
+              href="https://maps.app.goo.gl/RJsdJquNKvwcDJGYA"
+              className="mt-3"
+            ></a>
           </div>
         </div>
       </section>
 
-      <section className=" border-r-2 border-l-white w-[30%] ">
+      <section className=" border-r-2 border-l-white w-[30%]">
         <div className="flex flex-col items-end mr-6 h-[60%] relative">
           <Link
             className={`${cairo.className} font-bold text-base mt-4`}
@@ -127,7 +128,7 @@ const Footer = () => {
           </p>
         </div>
       </section>
-    </main>
+    </footer>
   );
 };
 

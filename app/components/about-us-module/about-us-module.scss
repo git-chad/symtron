@@ -1,0 +1,12 @@
+h1 {
+    font-size: min(12vw, 128px);
+}
+
+  p {
+    font-size: clamp(2ex, 3vw , 28px);
+    
+  }
+
+  path {
+    opacity: 30%;
+  }
