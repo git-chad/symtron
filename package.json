@@ -17,7 +17,10 @@
     "plaiceholder": "^3.0.0",
     "react": "latest",
     "react-dom": "latest",
+    "react-google-recaptcha": "^3.1.0",
+    "react-hook-form": "^7.47.0",
     "sass": "^1.68.0",
+    "sonner": "^1.0.3",
     "split-type": "^0.3.3"
   },
   "devDependencies": {
