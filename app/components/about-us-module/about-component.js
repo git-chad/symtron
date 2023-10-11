@@ -4,6 +4,7 @@ import { Cairo } from "next/font/google";
 import Image from "next/image";
 import LineBreak from "../line-break";
 import { strokeAnimation } from "./about-anims";
+import ValuesComponent from "./values-component";
 
 const cairo = Cairo({
   weight: ["variable"],
@@ -38,7 +39,7 @@ const AboutComponent = () => {
         About us
       </h1>
       <section className="flex flex-col sm:grid sm:grid-cols-2 gap-4 sm:gap-0 p-4 sm:p-16 items-start">
-        <div className="paragraphs flex flex-col gap-4 sm:gap-16 p-4 sm:p-16 sm:w-full sm:sticky sm:top-0 text-justify leading-loose">
+        <div className="paragraphs flex flex-col gap-4 sm:gap-16 p-4 sm:p-16 sm:w-full sm:sticky sm:top-0 text-start leading-loose">
           <p>
             Symtron S.A. is an Argentine company, specialized in the
             manufacturing, marketing, and support of self-service solutions. We
@@ -47,7 +48,7 @@ const AboutComponent = () => {
           </p>
           <p>
             We have over 20 years of experience in the development of
-            tailor-made solutions that protect our clients' investments, having
+            tailor-made solutions that protect our clients&apos; investments, having
             become a strategic provider/developer in the market.
           </p>
         </div>
@@ -64,6 +65,10 @@ const AboutComponent = () => {
         </div>
       </section>
 
+      <div className="2xl:h-[60vh] flex justify-center items-center">
+        <ValuesComponent />
+      </div>
+
       <LineBreak />
 
       <section className="flex flex-col sm:grid sm:grid-cols-2 gap-4 sm:gap-0 p-4 sm:p-16 items-start">
@@ -78,7 +83,7 @@ const AboutComponent = () => {
           <span>Current office space renovations</span>
         </div>
 
-        <div className="paragraphs flex flex-col gap-4 sm:gap-16 p-4 sm:p-16 sm:w-full sm:sticky top-0 text-justify leading-loose">
+        <div className="paragraphs flex flex-col gap-4 sm:gap-16 p-4 sm:p-16 sm:w-full sm:sticky top-0 text-start leading-loose">
           <p>
             We develop and manufacture "world-class" technological products. Our
             work philosophy is focused on technologically solving client
@@ -108,11 +113,16 @@ const AboutComponent = () => {
         className="absolute top-0 -left-10 w-full h-full -z-10"
         ref={svgRef}
       >
-        <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style={{ stopColor: "#5d63fc", stopOpacity: 1 }} />
-
-          <stop offset="50%" style={{ stopColor: "#c8e34f", stopOpacity: 1 }} />
-
+        <linearGradient
+          id="gradientStroke"
+          x1="0%"
+          y1="0%"
+          x2="50%"
+          y2="50%"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0%" style={{ stopColor: "#c8e34f", stopOpacity: 1 }} />
+          <stop offset="50%" style={{ stopColor: "#5d63fc", stopOpacity: 1 }} />
           <stop
             offset="100%"
             style={{ stopColor: "#d63651", stopOpacity: 1 }}
@@ -125,9 +135,9 @@ const AboutComponent = () => {
           stroke-width="25"
           strokeLinecap=""
           ref={pathRef}
+          className="color-path"
         />
       </svg>
-
     </main>
   );
 };
