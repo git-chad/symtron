@@ -48,7 +48,7 @@ const AboutComponent = () => {
           </p>
           <p>
             We have over 20 years of experience in the development of
-            tailor-made solutions that protect our clients' investments, having
+            tailor-made solutions that protect our clients&apos; investments, having
             become a strategic provider/developer in the market.
           </p>
         </div>
