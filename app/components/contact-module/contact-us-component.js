@@ -34,7 +34,7 @@ const ContactUs = () => {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center w-full h-screen">
+    <main className="flex flex-col items-center justify-center w-full h-screen overflow-hidden">
       <div className="relative flex sm:flex-row flex-col sm:w-5/6 justify-evenly">
         <div className="flex flex-col justify-between">
           <h1 className={`${cairo.className} text-6xl font-bold p-8 sm:p-0`}>
