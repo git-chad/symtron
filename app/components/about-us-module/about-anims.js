@@ -1,4 +1,4 @@
-// about-anims.js
+import gsap from "gsap";
 
 export const strokeAnimation = (pathRef) => {
     const path = pathRef.current;
