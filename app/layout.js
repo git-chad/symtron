@@ -24,7 +24,6 @@ export default function RootLayout({ children }) {
       <body className={`${overpass.className}`}>
         <Navbar />
         {children}
-        <Cursor />
         <Footer />
       </body>
     </html>

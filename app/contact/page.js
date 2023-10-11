@@ -1,16 +1,12 @@
-
-
 import React from 'react'
-import Footer from '../components/footer-module/footer'
-import Navbar from '../components/navbar/navbar-component'
-import ContactUs from '../components/contactUs-page/contactus'
+import ContactUs from '../components/contact-module/contact-us-component'
+import Cursor from '../components/custom-cursor/cursor'
 
 const Page = () => {
     return (
-        <div className=''>
-            <Navbar/>
+        <div>
             <ContactUs/>    
-            <Footer/>      
+            <Cursor/>
         </div>
     )
     }

@@ -2,8 +2,7 @@
 import { Cairo } from "next/font/google";
 import React from "react";
 import { useForm, Controller } from "react-hook-form";
-import asset from "public/Asset_1.png"
-import Image from "next/image";
+import RectangleButton from "../rectangle-button/rectangle-btn";
 
 const cairo = Cairo({
   weight: ["variable"],
@@ -35,10 +34,13 @@ const ContactUs = () => {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center w-screen h-screen mt-8">
-      <div className="flex sm:flex-row flex-col sm:w-5/6 justify-evenly">
+    <main className="flex flex-col items-center justify-center w-full h-screen">
+      <div className="relative flex sm:flex-row flex-col sm:w-5/6 justify-evenly">
         <div className="flex flex-col justify-between">
-          <h1 className={`${cairo.className} text-6xl font-bold mt-4`}> Contact Us</h1>
+          <h1 className={`${cairo.className} text-6xl font-bold p-8 sm:p-0`}>
+            {" "}
+            Contact Us
+          </h1>
           <div className="hidden sm:flex flex-col space-y-2">
             <a href="tel=+541152633232">(+54) 11 5263 3232</a>
             <a href="tel:+5408102203232">0810 220 3232</a>
@@ -222,14 +224,16 @@ const ContactUs = () => {
           />
 
           <button
-            className="bg-slate-700 text-white py-2 px-4 rounded"
+            className="bg-[#1e2124] text-white py-2 w-3/6 self-center"
             type="submit"
           >
-            Send
+            <a>Send</a>
           </button>
         </form>
+        <div className="pointer-events-nonc shape01 absolute top-0 -left-12 w-[800px] h-[800px] bg-green-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 lg:opacity-30 animate-blob"></div>
+        <div className="pointer-events-none shape02 absolute -top-48 left-16 w-[600px] h-[600px] bg-blue-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 lg:opacity-30 animate-blob animation-delay-2000"></div>
+        <div className="pointer-events-none shape03 absolute -top-24 -left-48 w-[900px] h-[900px] bg-indigo-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 lg:opacity-30 animate-blob animation-delay-4000"></div>
       </div>
-      <Image width={1000} height={0} src={asset} className="absolute top-0 -left-64 opacity-40 -z-10"></Image>
     </main>
   );
 };

@@ -40,8 +40,8 @@ const HomeComponentAlt = () => {
         </p>
 
         <div className="shape-01 absolute top-24 -left-4 w-[660px] h-[660px] bg-indigo-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 lg:opacity-50 animate-blob"></div>
-        <div className="shape-01 absolute top-48 left-64 w-[660px] h-[660px] bg-emerald-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 lg:opacity-50 animate-blob animation-delay-2000"></div>
-        <div className="shape-01 absolute top-56 left-16 w-[660px] h-[660px] bg-blue-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 lg:opacity-50 animate-blob animation-delay-4000"></div>
+        <div className="shape-02 absolute top-48 left-64 w-[660px] h-[660px] bg-emerald-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 lg:opacity-50 animate-blob animation-delay-2000"></div>
+        <div className="shape-03 absolute top-56 left-16 w-[660px] h-[660px] bg-blue-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 lg:opacity-50 animate-blob animation-delay-4000"></div>
       </div>
       <div className="sm:w-[70%] w-full sm:h-[75vw] h-[40%] relative mt-12 z-10">
         <Image fill objectFit="cover" src={heroimg} />
