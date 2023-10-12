@@ -46,15 +46,15 @@ const ParallaxDisplay = () => {
       </div>
       <div className="relative info-wrapper" ref={infoRef}>
         <SymtronCarousel />
-        <div className="mt-[48px] h-[50vh] flex flex-col justify-center items-center">
+        <div className="my-36 h-[50vh] flex flex-col justify-center items-center">
           <h1 className={`${cairo.className} w-[42vw] text-center`}>
             Innovative Design Meets Functional Excellence.
           </h1>
-          <h3 className="mt-[48px] text-center">
+          <p className="mt-12 text-center sm:w-[40vw]">
             Discover Symtron&apos;s cutting-edge range of ATMs, kiosks, and more. Our
             products are a blend of innovation, functionality, and modern
             design.
-          </h3>
+          </p>
           <div className="my-[48px]">
             <RectangleButton
               href={"/products"}
@@ -78,7 +78,7 @@ const Column = ({ images, y = 0 }) => {
             <Image
               src={src}
               fill
-              alt="deus ex machina"
+              alt=""
               className="rounded-sm"
             />
           </div>

@@ -66,11 +66,11 @@ const StatisticItem = ({ finalValue, text }) => {
   }, [finalValue, startAnimation]);
 
   return (
-    <div className="p-4 flex flex-col xl:w-[300px] sm:h-[20vh]" ref={intersectionRef}>
-      <h3 className={`${cairo.className} text-4xl sm:text-6xl font-black`}>
+    <div className="p-4 flex flex-col w-72 sm:h-[20vh]" ref={intersectionRef}>
+      <h3 className={`${cairo.className} font-black`}>
         {Math.round(animatedNumber)}<span className="font-light text-2xl sm:text-4xl">+</span>
       </h3>
-      <span className={`${overpass.className} mt-2 paragraph-with-line-breaks`}>
+      <span className={`${overpass.className} lg:mt-4 w-48 sm:w-52 2xl:w-full`}>
         {text}
       </span>
     </div>

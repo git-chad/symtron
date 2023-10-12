@@ -76,7 +76,7 @@ const ServiceSection = () => {
           Industry-Specific Solutions
         </h1>
         <div
-          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 p-8 [perspective:2000px]"
+          className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-8 p-8 [perspective:2000px]"
           ref={cardsRef}
         >
           {services.map((service, index) => (

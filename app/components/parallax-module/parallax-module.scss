@@ -62,5 +62,9 @@
         font-size: min(5vw, 28px);
         width: min(80%, 600px);
     }
+
+    p {
+        font-size: clamp(16px, 1.5vw, 28px);
+    }
 }
 

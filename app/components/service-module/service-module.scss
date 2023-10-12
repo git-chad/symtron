@@ -11,7 +11,7 @@
         }
 
         p {
-            font-size: min(5vw, 20px);
+            font-size: clamp(16px, 1.5vw, 28px);
             text-wrap: balance;
         }
     }

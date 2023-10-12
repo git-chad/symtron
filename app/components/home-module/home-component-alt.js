@@ -25,8 +25,8 @@ const HomeComponentAlt = () => {
   }, []);
   // bg-[#1e1415] text-white
   return (
-    <div className="alt-home relative w-screen h-screen flex flex-col items-center justify-center">
-      <div className="relative sm:w-[70%] sm:mt-36 flex flex-col z-10">
+    <div className="alt-home relative w-screen flex flex-col items-center justify-center">
+      <div className="relative sm:w-[70%] mt-48 sm:mt-36 flex flex-col z-10">
         <h1
           className={`${cairo.className} font-medium text-center sm:text-start leading-tight`}
         >
@@ -43,7 +43,7 @@ const HomeComponentAlt = () => {
         <div className="shape-02 absolute top-48 left-64 w-[660px] h-[660px] bg-emerald-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 lg:opacity-50 animate-blob animation-delay-2000"></div>
         <div className="shape-03 absolute top-56 left-16 w-[660px] h-[660px] bg-blue-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 lg:opacity-50 animate-blob animation-delay-4000"></div> */}
       </div>
-      <div className="sm:w-[70%] w-full h-[1900px] relative mt-12">
+      <div className="sm:w-[70%] w-full h-[500px] sm:h-[60vh] relative mt-12">
         <Image fill objectFit="cover" src={heroimg} />
       </div>
     </div>
