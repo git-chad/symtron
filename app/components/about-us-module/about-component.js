@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./about-us-module.scss";
 import { Cairo } from "next/font/google";
-import Image from "next/image";
 import LineBreak from "../line-break";
 import { strokeAnimation } from "./about-anims";
 import ValuesComponent from "./values-component";
@@ -85,11 +84,11 @@ const AboutComponent = () => {
 
         <div className="paragraphs flex flex-col gap-4 sm:gap-16 p-4 sm:p-16 sm:w-full sm:sticky top-0 text-start leading-loose">
           <p>
-            We develop and manufacture "world-class" technological products. Our
+            We develop and manufacture world-class technological products. Our
             work philosophy is focused on technologically solving client
             problems and through team interaction, providing simple but reliable
-            solutions. Always considering a "user-friendly" experience. We offer
-            comprehensive "custom" solutions, which facilitate and contribute to
+            solutions. Always considering a user-friendly experience. We offer
+            comprehensive custom solutions, which facilitate and contribute to
             the improvement of business efficiency. Ensuring continuity with our
             comprehensive technical service guaranteeing the time up of the
             installed park.

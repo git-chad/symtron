@@ -104,10 +104,10 @@ const Footer = () => {
 
           <div className="flex flex-row absolute bottom-0 right-0">
             <a>
-              <img src="/Frame-1.svg" alt="#"></img>
+              <img src="/Frame-1.svg" alt="instagram icon"></img>
             </a>
-            <a className="ml-4">
-              <img src="/Frame.svg" alt="#"></img>
+            <a className="ml-4" target="_blank" href="https://www.linkedin.com/company/symtron/">
+              <img src="/Frame.svg" alt="linkedin icon"></img>
             </a>
           </div>
         </div>

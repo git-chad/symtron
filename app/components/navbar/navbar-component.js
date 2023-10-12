@@ -46,19 +46,16 @@ const Navbar = () => {
               <Link href='/products'>Products</Link>
             </li>
             <li className="cursor-pointer">
-              <Link href='#'>Solutions</Link>
+              <Link href='#'>Field service</Link>
             </li>
             <li className="cursor-pointer">
               <Link href='/about'>About us</Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href='#'>Service</Link>
             </li>
           </ul>
 
           <div className="mr-12">
             <RectangleButton
-              href="/"
+              href="/contact"
               label="Get started"
               magneticEffect={false}
             />

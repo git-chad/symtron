@@ -21,38 +21,23 @@ const SideBar = ({ sidebarRef, linksRef, isActive, closeSidebar }) => {
           <Link href="/products">Products</Link>
         </li>
         <li className="cursor-pointer" ref={(el) => (linksRef.current[2] = el)} onClick={closeSidebar}>
-          <Link href="/">Solutions</Link>
+          <Link href="/">Service</Link>
         </li>
         <li className="cursor-pointer" ref={(el) => (linksRef.current[3] = el)} onClick={closeSidebar}>
           <Link href="/about">About us</Link>
         </li>
         <li className="cursor-pointer" ref={(el) => (linksRef.current[4] = el)} onClick={closeSidebar}>
-          <Link href="/">Service</Link>
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
 
-      <div className="w-full h-[40%] text-white flex flex-col justify-between ml-12 relative text-[12px] sm:text-[16px] 2xl:text-2xl">
-        <div className="phones">
-          <h3>Phone</h3>
-          <p className="mb-4">&#40;+54&#41; 11 5263 3232</p>
-          <h3>Support</h3>
-          <p className="mb-4">0810 220 3232</p>
-          <h3>Email</h3>
-          <a
-            className="cursor-pointer hover:font-bold transition-all"
-            href="mailto:symtron@latam.com"
-          >
-            symtron@latam.com
-          </a>
-        </div>
-        <a target="_blank" href="https://maps.app.goo.gl/RJsdJquNKvwcDJGYA">Pueyrredón 3831, Ciudadela, BA, AR</a>
 
-        <div className="icons flex mb-4 space-x-4 w-full">
-          <Image src={icon2}></Image>
-          <Image src={icon1}></Image>
+        <div className="icons flex mb-4 space-x-4 absolute bottom-12 left-12">
+          <a href="" target="_blank"><Image src={icon2}></Image></a>
+          <a href="https://www.linkedin.com/company/symtron/" target="_blank"><Image src={icon1}></Image></a>
         </div>
       </div>
-    </div>
+
   );
 };
 
