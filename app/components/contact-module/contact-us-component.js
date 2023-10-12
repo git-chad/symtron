@@ -34,7 +34,7 @@ const ContactUs = () => {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center w-full h-screen overflow-hidden">
+    <main className="flex flex-col items-center justify-center w-full h-screen">
       <div className="relative flex sm:flex-row flex-col sm:w-5/6 justify-evenly">
         <div className="flex flex-col justify-between">
           <h1 className={`${cairo.className} text-6xl font-bold p-8 sm:p-0`}>
@@ -230,9 +230,9 @@ const ContactUs = () => {
             <a>Send</a>
           </button>
         </form>
-        <div className="pointer-events-none shape01 absolute top-0 -left-12 sm:w-[800px] w-[400px] h-[400px] sm:h-[800px] bg-green-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob"></div>
-        <div className="pointer-events-none shape02 absolute -top-48 left-16 sm:w-[600px] w-[400px] h-[400px] sm:h-[600px] bg-blue-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob animation-delay-2000"></div>
-        <div className="pointer-events-none shape03 absolute -top-24 -left-48 sm:w-[900px] w-[400px] h-[400px] sm:h-[900px] bg-indigo-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob animation-delay-4000"></div>
+        <div className="pointer-events-none shape01 absolute top-0 -left-12 sm:w-[15vw] sm:h-[15vw] w-48 h-48 bg-green-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob"></div>
+        <div className="pointer-events-none shape02 absolute -top-48 left-16 sm:w-[25vw] sm:h-[25vw] w-48 h-48 bg-blue-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob animation-delay-2000"></div>
+        <div className="pointer-events-none shape03 absolute -top-24 -left-48 sm:w-[30vw] sm:h-[30vw] w-48 h-48 bg-indigo-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
     </main>
   );
