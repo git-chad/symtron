@@ -1,42 +1,69 @@
 "use client";
 import { Cairo } from "next/font/google";
 import React from "react";
-import { useForm, Controller } from "react-hook-form";
-import RectangleButton from "../rectangle-button/rectangle-btn";
+import { useForm } from "../../hooks/useForm";
 
 const cairo = Cairo({
   weight: ["variable"],
   subsets: ["latin"],
 });
 
+const initialForm = {
+  firstname: "",
+  email: "",
+  phone: "",
+  message: "",
+};
+
+const validationsForm = (form) => {
+  let errors = {};
+  let regexName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+  let regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
+  let regexMessage = /^.{1,255}$/;
+  let regexPhone = /^[0-9]+$/;
+
+  if (!form.firstname.trim()) {
+    errors.firstname = "El 'Nombre' es requerido";
+  } else if (!regexName.test(form.name)) {
+    errors.firstname = "El campo 'Nombre' sólo acepta letras ";
+  }
+
+  if (!form.email.trim()) {
+    errors.email = "El campo 'Email' es requerido";
+  } else if (!regexEmail.test(form.email.trim())) {
+    errors.email = "El campo 'Email' es incorrecto";
+  }
+
+  if (!form.phone.trim()) {
+    errors.phone = "El telefono es requerido";
+  } else if (!regexPhone.test(form.phone.trim())) {
+    errors.phone = "El campo 'Teléfono' sólo acepta números";
+  }
+
+  if (!form.message.trim()) {
+    errors.message = "El 'mensaje' es requerido";
+  } else if (!regexMessage.test(form.message.trim())) {
+    errors.comments = "El campo 'mensaje' no debe exceder los 255 caracteres";
+  }
+
+  return errors;
+};
+
 const ContactUs = () => {
   const {
-    control,
+    form,
+    errors,
+    loading,
+    response,
+    handleChange,
+    handleBlur,
     handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm();
-
-  const onSubmit = (data) => {
-    const { firstName, lastName, email, phone, message } = data;
-    const emailBody = `
-      Nombre: ${firstName} ${lastName}
-      Teléfono: ${phone}
-      Email: ${email}
-      Mensaje: ${message}
-    `;
-    const mailtoLink = `mailto:troncosojuan@gmail.com?subject=Mensaje de contacto&body=${encodeURIComponent(
-      emailBody
-    )}`;
-    window.location.href = mailtoLink;
-
-    reset();
-  };
+  } = useForm(initialForm, validationsForm);
 
   return (
     <main className="flex flex-col items-center justify-center w-full h-screen">
-      <div className="relative flex sm:flex-row flex-col sm:w-5/6 justify-evenly">
-        <div className="flex flex-col justify-between">
+      <div className="relative flex sm:flex-row flex-col sm:w-5/6 justify-evenly mt-8">
+        <div className="flex flex-col justify-between ">
           <h1 className={`${cairo.className} text-6xl font-bold p-8 sm:p-0`}>
             {" "}
             Contact Us
@@ -50,184 +77,69 @@ const ContactUs = () => {
         <form
           className="flex flex-col justify-between space-y-2 sm:w-[40%]"
           autoComplete="off"
-          onSubmit={handleSubmit(onSubmit)}
+          onSubmit={handleSubmit}
         >
-          <label>First Name</label>
-          <Controller
-            name="firstName"
-            control={control}
-            defaultValue=""
-            rules={{
-              required: "El campo de Nombre es obligatorio",
-              minLength: {
-                value: 3,
-                message: "El campo de Nombre debe tener al menos 3 caracteres",
-              },
-              maxLength: {
-                value: 20,
-                message:
-                  "El campo de Nombre debe tener como máximo 20 caracteres",
-              },
-            }}
-            render={({ field }) => (
-              <>
-                <input
-                  className={`border-b-2 border-gray-300 outline-none ${
-                    errors.firstName ? "border-red-500" : ""
-                  }`}
-                  type="text"
-                  {...field}
-                />
-                {errors.firstName && (
-                  <div className="text-red-500">{errors.firstName.message}</div>
-                )}
-              </>
-            )}
+          <label>Name</label>
+          <input
+            className="border-b-2 border-gray-300 outline-none"
+            type="text"
+            name="firstname"
+            onBlur={handleBlur}
+            onChange={handleChange}
+            value={form.firstname}
+            required
           />
-
-          <label>Last Name</label>
-          <Controller
-            name="lastName"
-            control={control}
-            defaultValue=""
-            rules={{
-              required: "El campo de Apellido es obligatorio",
-              minLength: {
-                value: 3,
-                message:
-                  "El campo de Apellido debe tener al menos 3 caracteres",
-              },
-              maxLength: {
-                value: 20,
-                message:
-                  "El campo de Apellido debe tener como máximo 20 caracteres",
-              },
-            }}
-            render={({ field }) => (
-              <>
-                <input
-                  className={`border-b-2 border-gray-300 outline-none ${
-                    errors.lastName ? "border-red-500" : ""
-                  }`}
-                  type="text"
-                  {...field}
-                />
-                {errors.lastName && (
-                  <div className="text-red-500">{errors.lastName.message}</div>
-                )}
-              </>
-            )}
-          />
+          {errors.firstname && (
+            <p className=" text-sm text-red-600">{errors.firstname}</p>
+          )}
 
           <label>Email</label>
-          <Controller
+          <input
+            className="border-b-2 border-gray-300 outline-none"
+            type="email"
             name="email"
-            control={control}
-            defaultValue=""
-            rules={{
-              required: "El campo de Email es obligatorio",
-              minLength: {
-                value: 6,
-                message: "El campo de Email debe tener al menos 7 caracteres",
-              },
-              maxLength: {
-                value: 40,
-                message:
-                  "El campo de Email debe tener como máximo 40 caracteres",
-              },
-              pattern: {
-                value: /^\S+@\S+$/i,
-                message: "El campo de Email debe ser un email válido",
-              },
-            }}
-            render={({ field }) => (
-              <>
-                <input
-                  className={`border-b-2 border-gray-300 outline-none ${
-                    errors.email ? "border-red-500" : ""
-                  }`}
-                  type="text"
-                  {...field}
-                />
-                {errors.email && (
-                  <div className="text-red-500">{errors.email.message}</div>
-                )}
-              </>
-            )}
+            onBlur={handleBlur}
+            onChange={handleChange}
+            value={form.email}
+            required
           />
-
+          {errors.email && (
+            <p className=" text-sm text-red-600">{errors.email}</p>
+          )}
           <label>Phone</label>
-          <Controller
-            name="phone"
-            control={control}
-            defaultValue=""
-            rules={{
-              required: "El campo de Teléfono es obligatorio",
-              minLength: {
-                value: 7,
-                message:
-                  "El campo de Teléfono debe tener al menos 7 caracteres",
-              },
-              maxLength: {
-                value: 16,
-                message:
-                  "El campo de Teléfono debe tener como máximo 16 caracteres",
-              },
-            }}
-            render={({ field }) => (
-              <>
-                <input
-                  className={`border-b-2 border-gray-300 outline-none ${
-                    errors.phone ? "border-red-500" : ""
-                  }`}
-                  type="text"
-                  {...field}
-                />
-                {errors.phone && (
-                  <div className="text-red-500">{errors.phone.message}</div>
-                )}
-              </>
-            )}
-          />
 
-          <label>Message</label>
-          <Controller
-            name="message"
-            control={control}
-            defaultValue=""
-            rules={{
-              required: "El campo de Mensaje es obligatorio",
-              minLength: {
-                value: 10,
-                message:
-                  "El campo de Mensaje debe tener al menos 10 caracteres",
-              },
-              maxLength: {
-                value: 250,
-                message:
-                  "El campo de Mensaje debe tener como máximo 250 caracteres",
-              },
-            }}
-            render={({ field }) => (
-              <>
-                <textarea
-                  className={`border-2 border-gray-300 rounded-md h-40 outline-none ${
-                    errors.message ? "border-red-500" : ""
-                  }`}
-                  {...field}
-                />
-                {errors.message && (
-                  <div className="text-red-500">{errors.message.message}</div>
-                )}
-              </>
-            )}
+          <input
+            name="phone"
+            className="border-b-2 border-gray-300 outline-none "
+            type="tel"
+            onBlur={handleBlur}
+            onChange={handleChange}
+            value={form.phone}
+            required
           />
+          {errors.phone && (
+            <p className=" text-sm text-red-600">{errors.phone}</p>
+          )}
+          <label>Message</label>
+
+          <textarea
+            name="message"
+            className="border-2 border-gray-300 rounded-md h-40 outline-none"
+            type="text"
+            onBlur={handleBlur}
+            onChange={handleChange}
+            value={form.message}
+            required
+          />
+          {errors.message && (
+            <p className=" text-sm text-red-600">{errors.message}</p>
+          )}
 
           <button
-            className="bg-[#1e2124] text-white py-2 w-3/6 self-center"
             type="submit"
+            className="bg-[#1e2124] text-white py-2 w-3/6 self-center"
           >
-            <a>Send</a>
+            Send
           </button>
         </form>
         <div className="pointer-events-none shape01 absolute top-0 -left-12 sm:w-[15vw] sm:h-[15vw] w-48 h-48 bg-green-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob"></div>
