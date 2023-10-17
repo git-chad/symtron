@@ -8,12 +8,12 @@ const cairo = Cairo({
 
 const Footer = () => {
   return (
-    <footer className="lg:flex hidden bg-[#1E2124] h-[35vh] w-full text-white lg:mt-96">
+    <footer className="lg:flex hidden bg-[#1E2124] h-[52vh] w-full text-white lg:mt-96">
       <section className="flex flex-row border-r-2 border-l-white text-sm  w-[45%] ">
         <div className=" border-r-2  border-l-white w-[20%]">
           <div className="flex flex-col ml-4">
             <Link
-              className={`${cairo.className} font-bold text-base mt-4`}
+              className={`${cairo.className} font-bold text-2xl mt-4`}
               href="/products"
             >
               Products
@@ -35,7 +35,7 @@ const Footer = () => {
 
         <div className="flex flex-col border-r-2  border-l-white w-[33%]">
           <div className="flex flex-col ml-8  ">
-            <h2 className={`${cairo.className} font-bold text-base mt-4`}>
+            <h2 className={`${cairo.className} font-bold text-2xl mt-4`}>
               Solutions
             </h2>
             <Link className="mt-8" href="#">
@@ -52,13 +52,15 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="items-center allign-center text-start w-[41%]">
+
+        <div className="items-center  text-start w-[49%]">
           <div className="flex flex-col ml-8 mt-4">
-            <h2 className="font-bold text-base">Contact</h2>
-            <a className="mt-8" href="tel:+541152633232">
+            <h2 className="font-bold text-2xl">Contact</h2>
+            <p className="mt-6 text-lg">Buenos Aires</p>
+            <a className="mt-3" href="tel:+541152633232">
               (+54) 11 5263 3232
             </a>
-            <a className="mt-3" href="tel:+5408102203232">
+            <a className="mt-4" href="tel:+5408102203232">
               0810 220 3232
             </a>
             <a className="mt-3" href="mailto:symtron@latam.com">
@@ -78,35 +80,67 @@ const Footer = () => {
               className="mt-3"
             ></a>
           </div>
+
+          <div className=" border-t-2 border-t-white ">
+            <div className="flex flex-col text-start mt-2 ml-8">
+              <p className="mt-4 text-lg">Bogota</p>
+              <a className="mt-3" href="tel:+999999999">
+                (+54) 999999999
+              </a>
+              <a className="mt-4" href="tel:+999999999">
+                999999999
+              </a>
+              <a className="mt-3" href="mailto:selfia@latam.com">
+                selfia@latam.com
+              </a>
+              <a
+                href="https://maps.app.goo.gl/RJsdJquNKvwcDJGYA"
+                target="_blank"
+                className="mt-3"
+              >
+                calle falsa 123 (CP 1702 ASQ),
+                <br />
+                Bogota, Colombia
+              </a>
+              <a
+                href="https://maps.app.goo.gl/RJsdJquNKvwcDJGYA"
+                className="mt-3"
+              ></a>
+            </div>
+          </div>
         </div>
       </section>
 
       <section className=" border-r-2 border-l-white w-[30%]">
         <div className="flex flex-col items-end mr-6 h-[60%] relative">
           <Link
-            className={`${cairo.className} font-bold text-base mt-4`}
+            className={`${cairo.className} font-bold text-2xl mt-4`}
             href="#"
           >
-            Service
+            Field Service
           </Link>
           <Link
-            className={`${cairo.className} font-bold text-base mt-4`}
+            className={`${cairo.className} font-bold text-2xl mt-4`}
             href="#"
           >
             About us
           </Link>
           <Link
-            className={`${cairo.className} font-bold text-base mt-4`}
+            className={`${cairo.className} font-bold text-2xl mt-4`}
             href="#"
           >
-            News
+            Contact
           </Link>
 
           <div className="flex flex-row absolute bottom-0 right-0">
             <a>
               <img src="/Frame-1.svg" alt="instagram icon"></img>
             </a>
-            <a className="ml-4" target="_blank" href="https://www.linkedin.com/company/symtron/">
+            <a
+              className="ml-4"
+              target="_blank"
+              href="https://www.linkedin.com/company/symtron/"
+            >
               <img src="/Frame.svg" alt="linkedin icon"></img>
             </a>
           </div>
@@ -114,7 +148,7 @@ const Footer = () => {
         <div className=" border-t-white border-t-2 mt-4  "></div>
       </section>
 
-      <section className="flex flex-col w-[59%]">
+      <section className="flex flex-col w-[50%]">
         <div className="h-[85%] relative">
           <h1
             className={`${cairo.className} absolute bottom-0 right-0 leading-4 font-black text-8xl mr-10 mb-6`}
