@@ -5,6 +5,7 @@
         "description": "asdfasd",
         "products": [
           {
+            "id": "VOLANS-II",
             "name": "VOLANS II",
             "title": "KMM Serie Volans II",
             "description": ["Descripción"],
@@ -13,6 +14,7 @@
             "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
           },
           {
+            "id": "VEGA",
             "name": "VEGA",
             "title": "KMM Serie Vega",
             "description": ["Descripción"],
@@ -27,6 +29,7 @@
         "description": "asdfasd",
         "products": [
           {
+            "id": "VOLANS-II",
             "name": "VOLANS II",
             "title": "KMM Serie Volans II",
             "description": ["Descripción"],
@@ -35,6 +38,7 @@
             "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
           },
           {
+            "id": "VEGA",
             "name": "VEGA",
             "title": "KMM Serie Vega",
             "description": ["Descripción"],

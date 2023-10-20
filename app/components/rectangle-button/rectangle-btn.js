@@ -3,12 +3,13 @@ import React from "react";
 import IsMagnetic from "./is-magnetic";
 
 const RectangleButton = (props) => {
-  const { href, label, onClick, magneticEffect } = props;
+  const { href, label, onClick, magneticEffect, as } = props;
 
   if (!magneticEffect) {
     return (
       <Link
         href={href}
+        as={as}
         className="rect-btn flex justify-between items-center magnetic-button"
         onClick={onClick}
       >
@@ -32,6 +33,7 @@ const RectangleButton = (props) => {
     <IsMagnetic>
       <Link
         href={href}
+        as={as}
         className="rect-btn flex justify-between items-center magnetic-button"
         onClick={onClick}
       >

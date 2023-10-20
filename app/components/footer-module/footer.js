@@ -8,12 +8,12 @@ const cairo = Cairo({
 
 const Footer = () => {
   return (
-    <footer className="lg:flex hidden bg-[#1E2124] h-[52vh] w-full text-white lg:mt-96">
+    <footer className="lg:flex hidden bg-[#1E2124] w-full text-white lg:mt-96">
       <section className="flex flex-row border-r-2 border-l-white text-sm  w-[45%] ">
         <div className=" border-r-2  border-l-white w-[20%]">
           <div className="flex flex-col ml-4">
             <Link
-              className={`${cairo.className} font-bold text-2xl mt-4`}
+              className={`${cairo.className} font-bold text-lg 2xl:text-2xl mt-4`}
               href="/products"
             >
               Products
@@ -35,7 +35,7 @@ const Footer = () => {
 
         <div className="flex flex-col border-r-2  border-l-white w-[33%]">
           <div className="flex flex-col ml-8  ">
-            <h2 className={`${cairo.className} font-bold text-2xl mt-4`}>
+            <h2 className={`${cairo.className} font-bold text-lg 2xl:text-2xl mt-4`}>
               Solutions
             </h2>
             <Link className="mt-8" href="#">
@@ -53,9 +53,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="items-center  text-start w-[49%]">
+        <div className="items-center text-start w-[49%]">
           <div className="flex flex-col ml-8 mt-4">
-            <h2 className="font-bold text-2xl">Contact</h2>
+            <h2 className="font-bold text-lg 2xl:text-2xl">Contact</h2>
             <p className="mt-6 text-lg">Buenos Aires</p>
             <a className="mt-3" href="tel:+541152633232">
               (+54) 11 5263 3232
@@ -81,9 +81,9 @@ const Footer = () => {
             ></a>
           </div>
 
-          <div className=" border-t-2 border-t-white ">
+          <div className=" border-t-2 border-t-white">
             <div className="flex flex-col text-start mt-2 ml-8">
-              <p className="mt-4 text-lg">Bogota</p>
+              <p className="mt-4 text-sm 2xl:text-lg">Bogota</p>
               <a className="mt-3" href="tel:+999999999">
                 (+54) 999999999
               </a>
@@ -114,19 +114,19 @@ const Footer = () => {
       <section className=" border-r-2 border-l-white w-[30%]">
         <div className="flex flex-col items-end mr-6 h-[60%] relative">
           <Link
-            className={`${cairo.className} font-bold text-2xl mt-4`}
+            className={`${cairo.className} font-bold text-lg 2xl:text-2xl mt-4`}
             href="#"
           >
             Field Service
           </Link>
           <Link
-            className={`${cairo.className} font-bold text-2xl mt-4`}
+            className={`${cairo.className} font-bold text-lg 2xl:text-2xl mt-4`}
             href="#"
           >
             About us
           </Link>
           <Link
-            className={`${cairo.className} font-bold text-2xl mt-4`}
+            className={`${cairo.className} font-bold text-lg 2xl:text-2xl mt-4`}
             href="#"
           >
             Contact
@@ -145,18 +145,18 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className=" border-t-white border-t-2 mt-4  "></div>
+        <div className=" border-t-white border-t-2 mt-4"></div>
       </section>
 
       <section className="flex flex-col w-[50%]">
         <div className="h-[85%] relative">
           <h1
-            className={`${cairo.className} absolute bottom-0 right-0 leading-4 font-black text-8xl mr-10 mb-6`}
+            className={`${cairo.className} absolute bottom-0 right-0 leading-4 font-black text-6xl 2xl:text-8xl mr-10 mb-6`}
           >
             SYMTRON
           </h1>
         </div>
-        <div className="border-t-white border-t-2 mt-4 ">
+        <div className="border-t-white border-t-2 mt-4">
           <p className="text-sm mt-3 ml-4">
             © 2023 Symtron - Todos los derechos reservados.
           </p>
