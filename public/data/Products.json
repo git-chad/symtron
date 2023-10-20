@@ -1,0 +1,49 @@
+{
+    "families": [
+      {
+        "name": "TAS",
+        "description": "asdfasd",
+        "products": [
+          {
+            "name": "VOLANS II",
+            "title": "KMM Serie Volans II",
+            "description": ["Descripción"],
+            "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+            "cuadro": "cuadro_1.jpg",
+            "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+          },
+          {
+            "name": "VEGA",
+            "title": "KMM Serie Vega",
+            "description": ["Descripción"],
+            "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+            "cuadro": "cuadro_1.jpg",
+            "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+          } 
+        ]
+      },
+      {
+        "name": "KMM",
+        "description": "asdfasd",
+        "products": [
+          {
+            "name": "VOLANS II",
+            "title": "KMM Serie Volans II",
+            "description": ["Descripción"],
+            "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+            "cuadro": "cuadro_1.jpg",
+            "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+          },
+          {
+            "name": "VEGA",
+            "title": "KMM Serie Vega",
+            "description": ["Descripción"],
+            "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+            "cuadro": "cuadro_1.jpg",
+            "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+          } 
+        ]
+      } 
+
+    ]
+  }
