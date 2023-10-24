@@ -1,58 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 
-const carousel = () => {
+const Carousel = ({ images }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const nextSlide = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevSlide = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
-    <div id="default-carousel" className="relative w-full" data-carousel="slide">
+    <div
+      id="controls-carousel"
+      className="relative w-full"
+      data-carousel="static"
+    >
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="image3.png"
-            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          ></img>
-        </div>
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="image4.png"
-            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          ></img>
-        </div>
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="image5.png"
-            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          ></img>
-        </div>
-      </div>
-      <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-        <button
-          type="button"
-          className="w-3 h-3 rounded-full"
-          aria-current="true"
-          aria-label="Slide 1"
-          data-carousel-slide-to="0"
-        ></button>
-        <button
-          type="button"
-          className="w-3 h-3 rounded-full"
-          aria-current="false"
-          aria-label="Slide 2"
-          data-carousel-slide-to="1"
-        ></button>
-        <button
-          type="button"
-          className="w-3 h-3 rounded-full"
-          aria-current="false"
-          aria-label="Slide 3"
-          data-carousel-slide-to="2"
-        ></button>
+        {images.map((image,  index) => (
+          <div
+            key={index}
+            className={`duration-700 ease-in-out ${
+              index === activeIndex ? "opacity-100" : "opacity-0"
+            }`}
+            data-carousel-item
+          >
+            <img
+              src={image}
+              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt={`Slide ${index + 1}`}
+            />
+          </div>
+        ))}
       </div>
       <button
         type="button"
         className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-prev
+        onClick={prevSlide}
       >
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
           <svg
@@ -64,9 +54,9 @@ const carousel = () => {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M5 1 1 5l4 4"
             />
           </svg>
@@ -77,6 +67,7 @@ const carousel = () => {
         type="button"
         className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-next
+        onClick={nextSlide}
       >
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
           <svg
@@ -88,9 +79,9 @@ const carousel = () => {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="m1 9 4-4-4-4"
             />
           </svg>
@@ -101,4 +92,4 @@ const carousel = () => {
   );
 };
 
-export default carousel;
+export default Carousel;
