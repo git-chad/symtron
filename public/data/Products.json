@@ -7,21 +7,48 @@
           {
             "id": "VOLANS-II",
             "name": "VOLANS II",
-            "title": "KMM Serie Volans II",
+            "title": "Serie TAS Volans II",
             "description": ["Descripción"],
-            "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+            "images": ["https://github.com/git-chad/symtron/blob/636be4807480a5c821d141b2cc382128b6a4e8e8/public/image3.png", "https://i.pinimg.com/236x/11/e9/66/11e96655e545f57098ee7e4df8b71a3b.jpg", "img_3.jpg"],
             "cuadro": "cuadro_1.jpg",
             "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
           },
           {
             "id": "VEGA",
             "name": "VEGA",
-            "title": "KMM Serie Vega",
+            "title": "Serie TAS Vega",
             "description": ["Descripción"],
             "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
             "cuadro": "cuadro_1.jpg",
             "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
-          } 
+          },
+          {
+            "id": "GAMMA-PMT",
+            "name": "GAMMA",
+            "title": "Serie TAS GAMMA PMT",
+            "description": ["Descripción"],
+            "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+            "cuadro": "cuadro_1.jpg",
+            "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+          },
+          {
+            "id": "GAMMA-II",
+            "name": "GAMMA II",
+            "title": "Serie TAS GAMMA II",
+            "description": ["Descripción"],
+            "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+            "cuadro": "cuadro_1.jpg",
+            "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+          },
+          {
+            "id": "AXIS-PMT",
+            "name": "AXIS",
+            "title": "Serie TAS AXIS PMT",
+            "description": ["Descripción"],
+            "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+            "cuadro": "cuadro_1.jpg",
+            "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+          }  
         ]
       },
       {
@@ -29,25 +56,154 @@
         "description": "asdfasd",
         "products": [
           {
-            "id": "VOLANS-II",
-            "name": "VOLANS II",
-            "title": "KMM Serie Volans II",
+            "id": "PYXIS",
+            "name": "PYXIS",
+            "title": "Serie KMM Pyxis",
+            "description": ["Descripción"],
+            "images": ["https://github.com/git-chad/symtron/blob/636be4807480a5c821d141b2cc382128b6a4e8e8/public/image3.png?raw=true", "img_2.jpg", "img_3.jpg"],
+            "cuadro": "cuadro_1.jpg",
+            "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+          },
+          {
+            "id": "LYNX",
+            "name": "LYNX",
+            "title": "Serie KMM Linx",
             "description": ["Descripción"],
             "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
             "cuadro": "cuadro_1.jpg",
             "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
           },
           {
-            "id": "VEGA",
-            "name": "VEGA",
-            "title": "KMM Serie Vega",
+            "id": "INDUS",
+            "name": "INDUS",
+            "title": "Serie KMM Indus",
             "description": ["Descripción"],
             "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
             "cuadro": "cuadro_1.jpg",
             "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
-          } 
+          },
+          {
+            "id": "FORNAX",
+            "name": "FORNAX",
+            "title": "Serie KMM Fornax",
+            "description": ["Descripción"],
+            "images": ["https://github.com/git-chad/symtron/blob/636be4807480a5c821d141b2cc382128b6a4e8e8/public/image3.png?raw=true", "img_2.jpg", "img_3.jpg"],
+            "cuadro": "cuadro_1.jpg",
+            "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+          },
+          {
+            "id": "ATRIA",
+            "name": "ATRIA",
+            "title": "Serie KMM Atria",
+            "description": ["Descripción"],
+            "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+            "cuadro": "cuadro_1.jpg",
+            "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+          },
+          {
+            "id": "ALTAIR",
+            "name": "ALTAIR",
+            "title": "Serie KMM Altair",
+            "description": ["Descripción"],
+            "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+            "cuadro": "cuadro_1.jpg",
+            "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+          }
         ]
-      } 
+      },
+      {
+      "name": "GMG",
+      "description": "asdfasd",
+      "products": [
+        {
+          "id": "S-LITE-500",
+          "name": "S-LITE 500",
+          "title": "Serie GMG S-Lite 500",
+          "description": ["Descripción"],
+          "images": ["https://github.com/git-chad/symtron/blob/636be4807480a5c821d141b2cc382128b6a4e8e8/public/image3.png", "img_2.jpg", "img_3.jpg"],
+          "cuadro": "cuadro_1.jpg",
+          "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+        },
+        {
+          "id": "LYRA",
+          "name": "LYRA",
+          "title": "Serie GMG Lyra",
+          "description": ["Descripción"],
+          "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+          "cuadro": "cuadro_1.jpg",
+          "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+        },
+        {
+          "id": "BARTOP",
+          "name": "BARTOP",
+          "title": "Serie GMG Bartop",
+          "description": ["Descripción"],
+          "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+          "cuadro": "cuadro_1.jpg",
+          "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+        } 
+      ]
+    },
+    {
+    "name": "ATM",
+    "description": "asdfasd",
+    "products": [
+      {
+        "id": "PEGASUS",
+        "name": "TCR PEGASUS",
+        "title": "Serie SMART TCR Pegasus",
+        "description": ["Descripción"],
+        "images": ["https://github.com/git-chad/symtron/blob/636be4807480a5c821d141b2cc382128b6a4e8e8/public/image3.png", "img_2.jpg", "img_3.jpg"],
+        "cuadro": "cuadro_1.jpg",
+        "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+      },
+      {
+        "id": "CETUS",
+        "name": "BOX CETUS",
+        "title": "Serie SMART Box Cetus",
+        "description": ["Descripción"],
+        "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+        "cuadro": "cuadro_1.jpg",
+        "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+      },
+      {
+        "id": "POLI",
+        "name": "POLI",
+        "title": "Serie PMT Poli",
+        "description": ["Descripción"],
+        "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+        "cuadro": "cuadro_1.jpg",
+        "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+      },
+      {
+        "id": "OCTANS",
+        "name": "OCTANS",
+        "title": "Serie PMT Octans",
+        "description": ["Descripción"],
+        "images": ["https://github.com/git-chad/symtron/blob/636be4807480a5c821d141b2cc382128b6a4e8e8/public/image3.png", "img_2.jpg", "img_3.jpg"],
+        "cuadro": "cuadro_1.jpg",
+        "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+      },
+      {
+        "id": "POLARIS",
+        "name": "POLARIS",
+        "title": "Serie ATM Polaris",
+        "description": ["Descripción"],
+        "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+        "cuadro": "cuadro_1.jpg",
+        "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+      },
+      {
+        "id": "ALPHA",
+        "name": "ALPHA",
+        "title": "Serie ATM Alpha",
+        "description": ["Descripción"],
+        "images": ["img_1.jpg", "img_2.jpg", "img_3.jpg"],
+        "cuadro": "cuadro_1.jpg",
+        "dimensiones": ["img_1.jpg", "img_2.jpg", "img_3.jpg"]
+      }
+    ]
+  }
 
     ]
   }
