@@ -10,50 +10,32 @@ const Footer = () => {
   return (
     <footer className="lg:flex hidden bg-[#1E2124] w-full text-white lg:mt-96">
       <section className="flex flex-row border-r-2 border-l-white text-sm  w-[45%] ">
-        <div className=" border-r-2  border-l-white w-[20%]">
-          <div className="flex flex-col ml-4">
+        <div className=" border-r-2  border-l-white w-[35%]">
+          <div className="flex flex-col ml-8">
             <Link
               className={`${cairo.className} font-bold text-lg 2xl:text-2xl mt-4`}
               href="/products"
             >
               Products
             </Link>
-            <Link className="mt-8" href="#">
+            <Link className="mt-8" href="/products/ATM">
               ATM
             </Link>
-            <Link className="mt-3" href="#">
+            <Link className="mt-3" href="/products/TAS">
               TAS
             </Link>
-            <Link className="mt-3" href="#">
+            <Link className="mt-3" href="/products/KMM">
               KMM
             </Link>
-            <Link className="mt-3" href="#">
-              TDP
+            <Link className="mt-3" href="/products/GMG">
+              GMG
             </Link>
           </div>
         </div>
 
-        <div className="flex flex-col border-r-2  border-l-white w-[33%]">
-          <div className="flex flex-col ml-8  ">
-            <h2 className={`${cairo.className} font-bold text-lg 2xl:text-2xl mt-4`}>
-              Solutions
-            </h2>
-            <Link className="mt-8" href="#">
-              Sector Strategies
-            </Link>
-            <Link className="mt-3" href="#">
-              Banking Solutions
-            </Link>
-            <Link className="mt-3" href="#">
-              Entertainment Tech
-            </Link>
-            <Link className="mt-3" href="#">
-              Commerce Innovation
-            </Link>
-          </div>
-        </div>
+        
 
-        <div className="items-center text-start w-[49%]">
+        <div className="items-center text-start w-[67%]">
           <div className="flex flex-col ml-8 mt-4">
             <h2 className="font-bold text-lg 2xl:text-2xl">Contact</h2>
             <p className="mt-6 text-lg">Buenos Aires</p>
@@ -115,19 +97,19 @@ const Footer = () => {
         <div className="flex flex-col items-end mr-6 h-[60%] relative">
           <Link
             className={`${cairo.className} font-bold text-lg 2xl:text-2xl mt-4`}
-            href="#"
+            href="/fieldservice"
           >
             Field Service
           </Link>
           <Link
             className={`${cairo.className} font-bold text-lg 2xl:text-2xl mt-4`}
-            href="#"
+            href="/about"
           >
             About us
           </Link>
           <Link
             className={`${cairo.className} font-bold text-lg 2xl:text-2xl mt-4`}
-            href="#"
+            href="/contact"
           >
             Contact
           </Link>
