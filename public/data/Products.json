@@ -2,7 +2,7 @@
     "families": [
       {
         "name": "TAS",
-        "description": "asdfasd",
+        "description": ["We introduce an innovative solution for retail, where self-service technology replicates service quality for customers and enhances project productivity.", "Our line of kiosks is 100% customizable and designed to adapt to all types of usage, increasing efficiency, ensuring user satisfaction, and creating a unique interactive experience that, thanks to its attractiveness and simplicity, boosts demand."],
         "products": [
           {
             "id": "VOLANS-II",
