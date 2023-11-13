@@ -4,13 +4,14 @@ import productsData from "../../../../public/data/Products.json";
 import Carousel from "../../../components/carousel";
 
 const Page = ({ params }) => {
-  const idProduct = params.product;
-  const idFamily = params.family;
+  const { product: idProduct, family: idFamily } = params;
 
   const family = productsData.families.find((fam) => fam.name === idFamily);
-  const product = family.products.find((prod) => prod.id === idProduct);
+  const product = family?.products.find((prod) => prod.id === idProduct);
 
-console.log(product);
+  if (!product) {
+    return <div>Producto no encontrado</div>;
+  }
 
   return (
     <div className="w-screen h-screen flex flex-col">
@@ -28,7 +29,7 @@ console.log(product);
         <h2 className="items-center justify-center text-2xl font-bold mt-4">
           Información
         </h2>
-        <img src={product} alt="Cuadro" />
+        <img src={product.cuadro} alt="Cuadro" />
         <div className="flex flex-row space-x-4">
           {product.dimensiones.map((foto, i) => (
             <img src={foto} alt={`Dimensiones ${i}`} key={i} />
@@ -37,6 +38,6 @@ console.log(product);
       </div>
     </div>
   );
-}
+};
 
 export default Page;

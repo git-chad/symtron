@@ -7,7 +7,6 @@ import RectangleButton from '@/app/components/rectangle-button/rectangle-btn';
 const Page = ({params}) => {
   const { family: name } = params; 
   const family = productsData.families.find((fam) => fam.name === name);
-  console.log(family)
   if (!family) {
     return <div>Family not found</div>;
   }
