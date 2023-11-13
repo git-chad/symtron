@@ -1,0 +1,21 @@
+.fieldservice{
+  p, li  {
+    font-size: clamp(16px, 1.5vw, 28px);
+  }
+}
+ 
+
+
+.values-component {
+  section {
+    h2, h3 {
+        font-size: min(6vw, 48px);
+        text-wrap: balance;
+    }
+    
+    p {
+        font-size: min(5vw, 20px);
+        text-wrap: balance;
+    }
+}
+}

@@ -5,6 +5,13 @@ import LineBreak from "../line-break";
 import { strokeAnimation } from "./about-anims";
 import ValuesComponent from "./values-component";
 
+// need four pics for this page
+import module from '@/public/module.jpg'
+import soldering from '@/public/soldering.jpg'
+import team from '@/public/team.jpg'
+import techworker from '@/public/techworker.jpg'
+import Image from "next/image";
+
 const cairo = Cairo({
   weight: ["variable"],
   subsets: ["latin"],
@@ -53,10 +60,10 @@ const AboutComponent = () => {
         </div>
 
         <div className="images flex flex-col gap-4 sm:gap-16">
-          <img src={firstimg} alt="ATM Prototype" className="w-full h-auto" />
+          <Image src={module} alt="ATM Prototype" className="w-full h-auto" />
           <span>Production of our first ATM prototype - 2013</span>
-          <img
-            src={secondimg}
+          <Image
+            src={soldering}
             alt="Office Renovation"
             className="w-full h-auto"
           />
@@ -72,10 +79,10 @@ const AboutComponent = () => {
 
       <section className="flex flex-col sm:grid sm:grid-cols-2 gap-4 sm:gap-0 p-4 sm:p-16 items-start">
         <div className="images flex flex-col gap-4 sm:gap-16">
-          <img src={firstimg} alt="ATM Prototype" className="w-full h-auto" />
+          <Image src={team} alt="ATM Prototype" className="w-full h-auto" />
           <span>Production of our first ATM prototype - 2013</span>
-          <img
-            src={secondimg}
+          <Image
+            src={techworker}
             alt="Office Renovation"
             className="w-full h-auto"
           />
