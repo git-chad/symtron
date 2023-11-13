@@ -27,9 +27,9 @@ const services = [
 const fieldservice = () => {
   return (
    
-<main className="flex flex-col mt-32 fieldservice">
-      <div className="flex flex-row justify-between w-full">
-        <div className="flex flex-col ml-4 ">
+<main className="flex flex-col mt-20 justify-items-center ml-6">
+      <div className="flex flex-row  ">
+        <div className="flex flex-col  ">
           <h1 className="text-4xl font-bold mt-6">Field Service</h1>
           <p className="text-xl mt-6">
           Symtron SA empresa líder en la región, en fabricación y mantenimiento de Kioskos </p>
@@ -37,14 +37,14 @@ const fieldservice = () => {
         
         <img src="./fieldServiceBanner.jpg" alt="Imagen de servicio" className='w-3/5 h-[800px] object-cover p-8' />
       </div>
-      <div className="flex flex-row justify-around w-full mt-24">
-        <p className=" w-[40%]  ">
+      <div className="flex flex-row space-x-32 mt-24 ml-4 ">
+        <p className=" w-1/2 ">
           Symtron provee a sus clientes servicios de mantenimiento integrales con el
           valor agregado del sistema de monitoreo, maximizando el time-up de la
           red. La aplicación además maneja remotamente upgrade de firmwares,
           diagnóstico y gestión de incidentes (entre otras capacidades).
         </p>
-        <ul className=" w-[40%]">
+        <ul className=" w-1/2">
             <li>- Alcance territorial</li>
             <li>- Soporte Nivel 1, 2 y 3</li>
             <li>- Mesa de Ayuda</li>
