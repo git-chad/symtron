@@ -14,7 +14,8 @@ const cairo = Cairo({
   subsets: ["latin"],
 });
 
-const images = ["/kmm1.jpg", "/kmm2.jpg", "/kmm3.jpg"];
+// later on replace 0 1 2
+const images = ["/kmm1.jpg", "/kmm2.jpg", "/kmm3.jpg", "/atria.png", "/design.jpg", "/gamma.png", "/module.jpg", "/soldering.jpg", "/team.jpg", "/techworker.jpg"];
 
 const ParallaxDisplay = () => {
   const infoRef = useRef(null);
@@ -39,10 +40,11 @@ const ParallaxDisplay = () => {
   return (
     <main className="flex flex-col mt-36">
       <div ref={container} className="wrapper h-screen">
-        <Column images={[images[0], images[1], images[2]]} y={y} />
-        <Column images={[images[1], images[2], images[0]]} y={y2} />
-        <Column images={[images[2], images[0], images[1]]} y={y3} />
-        <Column images={[images[2], images[1], images[0]]} y={y4} />
+        <Column images={[images[7], images[2], images[5]]} y={y} />
+        <Column images={[images[0], images[8], images[3]]} y={y2} />
+        <Column images={[images[6], images[1], images[9]]} y={y3} />
+        <Column images={[images[4], images[2], images[5]]} y={y4} />
+
       </div>
       <div className="relative info-wrapper" ref={infoRef}>
         <SymtronCarousel />
