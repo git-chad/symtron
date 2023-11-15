@@ -18,21 +18,21 @@ const Carousel = ({ images }) => {
   return (
     <div
       id="controls-carousel"
-      className="relative w-full"
+      className="relative sm:w-2/3"
       data-carousel="static"
     >
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-        {images.map((image,  index) => (
+      <div className="relative overflow-hidden rounded-lg h-[900px]">
+        {images.map((image, index) => (
           <div
             key={index}
-            className={`duration-700 ease-in-out ${
+            className={`p-32 duration-700 ease-in-out ${
               index === activeIndex ? "opacity-100" : "opacity-0"
             }`}
             data-carousel-item
           >
             <img
               src={image}
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain h-[1000px]"
               alt={`Slide ${index + 1}`}
             />
           </div>
@@ -44,7 +44,7 @@ const Carousel = ({ images }) => {
         data-carousel-prev
         onClick={prevSlide}
       >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full  transition-colors group-focus:outline-none">
           <svg
             className="w-4 h-4 text-white dark:text-gray-800"
             aria-hidden="true"
@@ -69,7 +69,7 @@ const Carousel = ({ images }) => {
         data-carousel-next
         onClick={nextSlide}
       >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full transition-colors group-focus:outline-none">
           <svg
             className="w-4 h-4 text-white dark:text-gray-800"
             aria-hidden="true"

@@ -21,7 +21,7 @@ const familyData = [
     par1: "Developed on a flexible hardware and software architecture, the KMM Indus allows for the expansion of functions using the foundation of its original configuration.",
     par2: "Thanks to its simple and modular design, integration of a wide range of devices is made easy. It adapts to the required presentation, allowing for various re-configurations to expand your business possibilities.",
     ctaLabel: "See KMMs",
-    image: "/path/to/kmm-image.jpg",
+    image: "https://drive.google.com/uc?id=1C0ZNPH1IFSbWlw1efR8DBYyy3EBnCbCv",
   },
   {
     name: "GMG",
@@ -37,7 +37,7 @@ const familyData = [
     par1: "Our ATM family ensures the best cost-effective investment to meet the needs for these types of solutions in any environment, with the highest level of performance.",
     par2: "Developed on a flexible hardware and software architecture, it allows for the expansion of functions using the base of its original configuration.",
     ctaLabel: "See ATMs",
-    image: "/path/to/kmm-image.jpg",
+    image: "https://github.com/git-chad/symtron/blob/636be4807480a5c821d141b2cc382128b6a4e8e8/public/image3.png",
   },
   {
     name: "TAS",
@@ -45,7 +45,7 @@ const familyData = [
     par1: "We introduce an innovative solution for retail, where self-service technology replicates service quality for customers and enhances project productivity.",
     par2: "Our line of kiosks is 100% customizable and designed to adapt to all types of usage, increasing efficiency, ensuring user satisfaction, and creating a unique interactive experience that, thanks to its attractiveness and simplicity, boosts demand.",
     ctaLabel: "See TAS",
-    image: "/path/to/kmm-image.jpg",
+    image: "https://drive.google.com/uc?id=1zQVCcyDonsHnlDTYCqQaoPLerkOZKt7f",
   },
 ];
 
@@ -124,7 +124,7 @@ const ProductsComponent = () => {
               </div>
             </div>
 
-            <div className="pic-half w-full sm:w-[40%] h-[50vh] sm:h-full flex justify-center items-center bg-gray-100 opacity-30">
+            <div className="pic-half w-full sm:w-[40%] h-[50vh] sm:h-full flex justify-center items-center bg-gray-100">
               <figure className="text-2xl">
                 <img alt={`${family.name} sample picture`} src={family.image} />
               </figure>

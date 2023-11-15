@@ -29,9 +29,7 @@
           "id": "VEGA",
           "name": "VEGA",
           "title": "Serie TAS Vega",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=1RAJkskqFdgFMJ5bOvdM4kCFPaxPYKr-d",
             "https://drive.google.com/uc?id=1CTzIj3bzIr6upDFeU3js_8ubAV3zro1P",
@@ -48,9 +46,7 @@
           "id": "GAMMA-PMT",
           "name": "GAMMA",
           "title": "Serie TAS GAMMA PMT",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=1d5axgeP-ZVbB069NjD7FvxiDUIVLKEBD",
             "https://drive.google.com/uc?id=1UeR3-bRwKRpNnNkK7d4KJdf2LPuT_hsj",
@@ -67,9 +63,7 @@
           "id": "GAMMA-II",
           "name": "GAMMA II",
           "title": "Serie TAS GAMMA II",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=1fdsAUBdy86_lanIQSNwY-9nmjTQJ6ZYA",
             "https://drive.google.com/uc?id=1pe4L0aDFxTT0QsjL9qsv7UoZHMCTyQ8b",
@@ -86,9 +80,7 @@
           "id": "AXIS-PMT",
           "name": "AXIS",
           "title": "Serie TAS AXIS PMT",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=1XqdUGY91gQ8o9kBnmIuhCn2OT0T_BKe9",
             "https://drive.google.com/uc?id=1rxc9QB7_MljSegxguau-L95F83vprQKa",
@@ -115,7 +107,8 @@
           "name": "PYXIS",
           "title": "Serie KMM Pyxis",
           "description": [
-            "Descripción"
+            "La familia de Kioscos Multimedia es la herramienta adecuada para lograr una comunicación más efectiva a través de presentaciones profesionales o contenidos de multimedia que pueden ser generados y gestionados de forma local o remota, en cualquier tipo de ambientes con el más alto nivel de rendimiento al mejor costo/beneficio.",
+            "Gracias a su diseño simple y modular, se facilita la integración de dispositivos logrando funcionalidades que amplían las posibilidades de su negocio"
           ],
           "images": [
             "https://drive.google.com/uc?id=1JoMNmGW3zoRbpk0Qy1_j0f1rhXjUm4kn",
@@ -133,9 +126,7 @@
           "id": "LYNX",
           "name": "LYNX",
           "title": "Serie KMM Linx",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=",
             "https://drive.google.com/uc?id=",
@@ -152,9 +143,7 @@
           "id": "INDUS",
           "name": "INDUS",
           "title": "Serie KMM Indus",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=1C0ZNPH1IFSbWlw1efR8DBYyy3EBnCbCv",
             "https://drive.google.com/uc?id=1gPy9aZIrz8Y9DaDXAWkbVocN85tfK5hZ",
@@ -171,9 +160,7 @@
           "id": "FORNAX",
           "name": "FORNAX",
           "title": "Serie KMM Fornax",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=",
             "https://drive.google.com/uc?id=",
@@ -190,9 +177,7 @@
           "id": "ATRIA",
           "name": "ATRIA",
           "title": "Serie KMM Atria",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=1XYbvGKcWHeXm_i1baJXn4uotBf5hBLCD",
             "https://drive.google.com/uc?id=1yu6HNXlA3UbK_XYdXq7bC0BxchNSaJBz",
@@ -209,9 +194,7 @@
           "id": "ALTAIR",
           "name": "ALTAIR",
           "title": "Serie KMM Altair",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=",
             "https://drive.google.com/uc?id=",
@@ -234,9 +217,7 @@
           "id": "S-LITE-500",
           "name": "S-LITE 500",
           "title": "Serie GMG S-Lite 500",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=",
             "https://drive.google.com/uc?id=",
@@ -253,9 +234,7 @@
           "id": "LYRA",
           "name": "LYRA",
           "title": "Serie GMG Lyra",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=",
             "https://drive.google.com/uc?id=",
@@ -272,9 +251,7 @@
           "id": "BARTOP",
           "name": "BARTOP",
           "title": "Serie GMG Bartop",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=",
             "https://drive.google.com/uc?id=",
@@ -301,9 +278,7 @@
           "id": "PEGASUS",
           "name": "TCR PEGASUS",
           "title": "Serie SMART TCR Pegasus",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://github.com/git-chad/symtron/blob/636be4807480a5c821d141b2cc382128b6a4e8e8/public/image3.png",
             "https://drive.google.com/uc?id=",
@@ -320,9 +295,7 @@
           "id": "CETUS",
           "name": "BOX CETUS",
           "title": "Serie SMART Box Cetus",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=",
             "https://drive.google.com/uc?id=",
@@ -339,9 +312,7 @@
           "id": "POLI",
           "name": "POLI",
           "title": "Serie PMT Poli",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=",
             "https://drive.google.com/uc?id=",
@@ -358,9 +329,7 @@
           "id": "OCTANS",
           "name": "OCTANS",
           "title": "Serie PMT Octans",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=12pUVsv9NeWHBSPlm7AmYP1sW8Au3oMY1",
             "https://drive.google.com/uc?id=1JfmLCXvnn7LTH6SETlbZ2HYG9AA1xOJB",
@@ -377,9 +346,7 @@
           "id": "POLARIS",
           "name": "POLARIS",
           "title": "Serie ATM Polaris",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=",
             "https://drive.google.com/uc?id=",
@@ -396,9 +363,7 @@
           "id": "ALPHA",
           "name": "ALPHA",
           "title": "Serie ATM Alpha",
-          "description": [
-            "Descripción"
-          ],
+          "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=1vn3LznLAJuTQ369OUW-QoUrKHfVjCTxJ",
             "https://drive.google.com/uc?id=1uvzF_NIXfwUxfxQGWVPEnlQ14_UBzk5l",
