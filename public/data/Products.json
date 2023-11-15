@@ -2,21 +2,19 @@
   "families": [
     {
       "name": "TAS",
-      "description": "asdfasd",
+      "description": "Terminales de Autoservicio: inversión rentable y alto rendimiento en múltiples entornos. Flexibles y ampliables, se integran con facilidad para ofrecer funcionalidades extendidas.",
       "products": [
         {
           "id": "VOLANS-II",
           "name": "VOLANS II",
           "title": "Serie TAS Volans II",
           "description": [
-            "La familia de Terminales de Autoservicio aseguran la mejor inversión costo resultado, en cualquier tipo de ambientes, con el más alto nivel de rendimiento.",
-            "Desarrollados sobre una arquitectura de hardware y software flexible, permite la ampliación de funciones utilizando la base de su configuración original.",
-            "Gracias a su diseño simple y modular, se facilita la integración de dispositivos logrando funcionalidades que amplían las posibilidades de su negocio."
+            "Descripcion."
           ],
           "images": [
-            "https://drive.google.com/uc?id=1zQVCcyDonsHnlDTYCqQaoPLerkOZKt7f",
-            "https://drive.google.com/uc?id=1TJiGzRQnKhrLBDI2nF0gDhv6y5PawsSK",
-            "https://drive.google.com/uc?id=1OteYLIBLoMXEEaIzRWzhsHzEMwv_EL1L"
+            "https://drive.google.com/uc?id=19M3UC6_exh29R_gfazy-zwPdzCWKvpQV",
+            "https://drive.google.com/uc?id=1S9aay2egtWZfwq8l0de4xLp5ig8dSuUw",
+            "https://drive.google.com/uc?id=1k5Y9rbnNSxIjwAuemf2GkEqwt81T_Wy9"
           ],
           "cuadro": "cuadro_1.jpg",
           "dimensiones": [
@@ -33,9 +31,9 @@
             "Descripción"
           ],
           "images": [
-            "https://drive.google.com/uc?id=1RAJkskqFdgFMJ5bOvdM4kCFPaxPYKr-d",
-            "https://drive.google.com/uc?id=1CTzIj3bzIr6upDFeU3js_8ubAV3zro1P",
-            "https://drive.google.com/uc?id=1Vhklp4x9aWMLP3ZTzpMR7sh0m_Z3vlnV"
+            "https://drive.google.com/uc?id=1XFHY0GxQN8c28E-2Ti0OwOyLwkKNSks9",
+            "https://drive.google.com/uc?id=1EBYmil9jxP_Hd5KCPsCTy2mRnzlAXdLX",
+            "https://drive.google.com/uc?id=1g_Hp1QFubLU07jNzZip6xJvoT5xejeQB"
           ],
           "cuadro": "cuadro_1.jpg",
           "dimensiones": [
@@ -52,9 +50,9 @@
             "Descripción"
           ],
           "images": [
-            "https://drive.google.com/uc?id=1d5axgeP-ZVbB069NjD7FvxiDUIVLKEBD",
-            "https://drive.google.com/uc?id=1UeR3-bRwKRpNnNkK7d4KJdf2LPuT_hsj",
-            "https://drive.google.com/uc?id=1KUfcWSy0zoEDCpIunq0Ox7b6wxCwgzx2"
+            "https://drive.google.com/uc?id=1-kY713jh5uw76gwISgjFvRGN44m9fXIT",
+            "https://drive.google.com/uc?id=18SplJDMM7uK2U6HVwuaC2sIQ-EJspPlD",
+            "https://drive.google.com/uc?id=1iqF1anUiL-t6qbZ9I0za5pHAfI64pcJp"
           ],
           "cuadro": "cuadro_1.jpg",
           "dimensiones": [
@@ -71,9 +69,9 @@
             "Descripción"
           ],
           "images": [
-            "https://drive.google.com/uc?id=1fdsAUBdy86_lanIQSNwY-9nmjTQJ6ZYA",
-            "https://drive.google.com/uc?id=1pe4L0aDFxTT0QsjL9qsv7UoZHMCTyQ8b",
-            "https://drive.google.com/uc?id=1xuSuniL9zNaX19t5yteVIAsmlQLj7zuw"
+            "https://drive.google.com/uc?id=1764befhh_H1OnRe31Wwalcw8hva-X7cA",
+            "https://drive.google.com/uc?id=12UZqSJjB65bld-G_7QPMMs7dpy9o_JU9",
+            "https://drive.google.com/uc?id=1Xp_BdGeMgvvFTbv0C5nrmr97OrS9OQhA"
           ],
           "cuadro": "cuadro_1.jpg",
           "dimensiones": [
@@ -90,9 +88,9 @@
             "Descripción"
           ],
           "images": [
-            "https://drive.google.com/uc?id=1XqdUGY91gQ8o9kBnmIuhCn2OT0T_BKe9",
-            "https://drive.google.com/uc?id=1rxc9QB7_MljSegxguau-L95F83vprQKa",
-            "https://drive.google.com/uc?id=16GGvcj7Sxk9UGpb98tK0qb-5eiFuxIPO"
+            "https://drive.google.com/uc?id=1xBm1xfaW_x-wXCmnDKbB-7OO3-Pig3f5",
+            "https://drive.google.com/uc?id=1MYm882xOzgrpsutYEs86laD1-7HtyWJE",
+            "https://drive.google.com/uc?id=1BBlgJvHZkPtdXEX0SvLvdNgZxphsde8i"
           ],
           "cuadro": "cuadro_1.jpg",
           "dimensiones": [
@@ -106,8 +104,7 @@
     {
       "name": "KMM",
       "description": [
-        "La familia de Kioscos Multimedia es la herramienta adecuada para lograr una comunicación más efectiva a través de presentaciones profesionales o contenidos de multimedia que pueden ser generados y gestionados de forma local o remota, en cualquier tipo de ambientes con el más alto nivel de rendimiento al mejor costo/beneficio.",
-        "Gracias a su diseño simple y modular, se facilita la integración de dispositivos logrando funcionalidades que amplían las posibilidades de su negocio"
+        "Los Kioscos Multimedia ofrecen comunicación efectiva mediante presentaciones profesionales y contenido multimedia. Su diseño simple y modular facilita la integración de dispositivos, expandiendo las posibilidades de tu negocio."
       ],
       "products": [
         {
@@ -118,9 +115,9 @@
             "Descripción"
           ],
           "images": [
-            "https://drive.google.com/uc?id=1JoMNmGW3zoRbpk0Qy1_j0f1rhXjUm4kn",
-            "https://drive.google.com/uc?id=16IFIULVYW2DUuGg_hbzrVJajv6upug5d",
-            "https://drive.google.com/uc?id=1jUyQs1psEa9_GD4DtVWRp5vUyirnospV"
+            "https://drive.google.com/uc?id=1Un-aQRsww67sLTWNOVq5Bb8KM8_0pSQv",
+            "https://drive.google.com/uc?id=1OOY9Qx-Qx7qKX0-RFN-FLVnOwCIF0E_w",
+            "https://drive.google.com/uc?id=1cryAgUpbm2_mXICnR9-JaxdbBL3Rm42x"
           ],
           "cuadro": "cuadro_1.jpg",
           "dimensiones": [
@@ -194,9 +191,9 @@
             "Descripción"
           ],
           "images": [
-            "https://drive.google.com/uc?id=1XYbvGKcWHeXm_i1baJXn4uotBf5hBLCD",
-            "https://drive.google.com/uc?id=1yu6HNXlA3UbK_XYdXq7bC0BxchNSaJBz",
-            "https://drive.google.com/uc?id=1EmUEwIObECTUHOEl6izQ0GrO_TcsIT1X"
+            "https://drive.google.com/uc?id=1L4TSDu-FFt3I-7EDmZFCajgLj-Orkgnl",
+            "https://drive.google.com/uc?id=1rpuUZpMenkYqfQDr9vJlbo_N-cDZIAT6",
+            "https://drive.google.com/uc?id=1hicmhGhp1JgNFC_Z4k7YySAGYyyvVgE-"
           ],
           "cuadro": "cuadro_1.jpg",
           "dimensiones": [
@@ -305,7 +302,7 @@
             "Descripción"
           ],
           "images": [
-            "https://github.com/git-chad/symtron/blob/636be4807480a5c821d141b2cc382128b6a4e8e8/public/image3.png",
+            "https://drive.google.com/uc?id=",
             "https://drive.google.com/uc?id=",
             "https://drive.google.com/uc?id="
           ],
@@ -362,9 +359,9 @@
             "Descripción"
           ],
           "images": [
-            "https://drive.google.com/uc?id=12pUVsv9NeWHBSPlm7AmYP1sW8Au3oMY1",
-            "https://drive.google.com/uc?id=1JfmLCXvnn7LTH6SETlbZ2HYG9AA1xOJB",
-            "https://drive.google.com/uc?id=1SROG4OsRXKDpzmsP1TnqbsiYmsw8oPLw"
+            "https://drive.google.com/uc?id=1N3aT4LZRqHrvarTugmAU7LTahm3juflZ",
+            "https://drive.google.com/uc?id=1SROG4OsRXKDpzmsP1TnqbsiYmsw8oPLw",
+            "https://drive.google.com/uc?id=13PQuLB5KAjb3G33GICu_Tio534oBOZK0"
           ],
           "cuadro": "cuadro_1.jpg",
           "dimensiones": [
@@ -400,9 +397,9 @@
             "Descripción"
           ],
           "images": [
-            "https://drive.google.com/uc?id=1vn3LznLAJuTQ369OUW-QoUrKHfVjCTxJ",
-            "https://drive.google.com/uc?id=1uvzF_NIXfwUxfxQGWVPEnlQ14_UBzk5l",
-            "https://drive.google.com/uc?id=1ZS4bVBir5bLMhGavLbk5FKlMRbLUjybP"
+            "https://drive.google.com/uc?id=1o8Z2V1XNfAG2KtCciit1mQ9XtMOdqi0_",
+            "https://drive.google.com/uc?id=1SVW_Gik7H_KqzyyF_a5iilforyj0hssI",
+            "https://drive.google.com/uc?id=1XRFtpcsV_w9ASCwqkJIWFcmOKCuLhUqV"
           ],
           "cuadro": "cuadro_1.jpg",
           "dimensiones": [

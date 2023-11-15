@@ -1,8 +1,7 @@
 'use client'
 import React from 'react'
 import productsData from '../../../public/data/Products.json'
-import Link from 'next/link';  // Don't forget to import Link if you're using it
-import RectangleButton from '@/app/components/rectangle-button/rectangle-btn';
+import ProductCard from '@/app/components/product-module/product-card';
 
 const Page = ({params}) => {
   const { family: name } = params; 
@@ -12,28 +11,20 @@ const Page = ({params}) => {
   }
 
   return (
-    <div className='w-screen h-screen flex flex-col justify-center items-center'>
-      <h1>{family.name}</h1>
-      <div>
-        <h2>Products:</h2>
-        <ul>
-          {family.products.map((product, index) => (
-            <li key={index}>
-              <h3>{product.name}</h3>
-              <p>Title: {product.title}</p>
-              <RectangleButton
-                    href="/products/[family]/[product]"
-                    as={`/products/${family.name}/${product.id}`}
-                    label={family.ctaLabel}
-                    magneticEffect={true}
-                  />
-              {/* You can add more fields here, like images, description, etc. */}
-            </li>
-          ))}
-        </ul>
+    <main className="flex flex-col mt-20 justify-items-center p-8">
+      
+        <div className="flex flex-col">
+          <h1 className="text-4xl font-bold mt-6">{family.name}</h1>
+          <p className="text-xl mt-6 max-w-2xl">{family.description}</p>
+        </div>
+      <div className="grid grid-cols-4 gap-6 mt-32 ">
+        {family.products.map((product) => (
+            <ProductCard key={product.id} product={product} family={family} />
+          ))
+        }
       </div>
-    </div>  
-  )
-}
+    </main>
+    );
+  };
 
 export default Page
