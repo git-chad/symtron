@@ -2,6 +2,8 @@
 import React from "react";
 import productsData from "../../../../public/data/Products.json";
 import Carousel from "../../../components/carousel";
+import "./product-page.scss";
+import RectangleButton from "@/app/components/rectangle-button/rectangle-btn";
 
 const Page = ({ params }) => {
   const { product: idProduct, family: idFamily } = params;
@@ -10,29 +12,36 @@ const Page = ({ params }) => {
   const product = family?.products.find((prod) => prod.id === idProduct);
 
   if (!product) {
-    return <div>Producto no encontrado</div>;
+    return <div className="w-full min-h-screen flex items-center justify-center"><h1>Producto no encontrado</h1></div>;
   }
 
   return (
-    <div className="w-screen h-screen flex flex-col">
-      <div className="flex flex-row space-x-8 mt-24 w-3/5">
-        <div className="flex flex-col">
-          <h1 className="text-4xl font-bold">{product.name}</h1>
-          <p>{product.description}</p>
+    <div className="product-typo w-screen min-h-screen flex flex-col">
+      <div className="flex flex-col sm:flex-row mt-24 w-full justify-center">
+        <div className="flex flex-col sm:w-1/2 p-16">
+          <h1 className="text-4xl font-bold self-center sm:self-start">{product.name}</h1>
+          <p className="mt-4">{product.description}</p>
+          <div className="sm:w-1/5 mt-8 sm:mt-16 self-center">
+            <RectangleButton
+              label="Contact"
+              magneticEffect={true}
+              href="/contact"
+            />
+          </div>
         </div>
-        <div className="w-2/3">
+        <div className="sm:w-1/2 w-full p-2 sm:p-16 -mt-48 sm:-mt-0">
           <Carousel images={product.images} alt={product.name + " image"} />
         </div>
       </div>
 
-      <div className="flex flex-col w-2/5">
+      <div className="flex flex-col p-16">
         <h2 className="items-center justify-center text-2xl font-bold mt-4">
           Información
         </h2>
         <img src={product.cuadro} alt="Cuadro" />
         <div className="flex flex-row space-x-4">
-          {product.dimensiones.map((foto, i) => (
-            <img src={foto} alt={`Dimensiones ${i}`} key={i} />
+          {product.dimensiones.map((img, i) => (
+            <img src={img} alt={`Dimensiones ${i}`} key={i} />
           ))}
         </div>
       </div>
