@@ -35,18 +35,18 @@ const HomeStatistics = () => {
           <div className="flex sm:flex-row flex-col lg:items-start mt-8 sm:mt-0 lg:w-1/2 w-full">
             <div className="sm:w-1/2 flex flex-col sm:items-start ml-6 sm:ml-0 sm:pr-8 lg:p-0 lg:space-y-8 2xl:space-y-0">
               <StatisticItem
-                finalValue={25}
+                finalValue={30}
                 text="Over two decades of industry leadership"
               />
               <StatisticItem
-                finalValue={8000}
+                finalValue={12000}
                 text="Of our products installed"
               />
             </div>
             <div className="sm:w-1/2 flex flex-col sm:items-start ml-6 sm:ml-0 sm:p-8 lg:p-0 lg:space-y-8 2xl:space-y-0">
               <StatisticItem finalValue={400} text="Satisfied customers" />
               <StatisticItem
-                finalValue={4}
+                finalValue={5}
                 text="Presence in 4 countries globally"
               />
             </div>
