@@ -1,6 +1,6 @@
 import React from 'react'
 import { Cairo } from "next/font/google";
-import "./fieldservice-module.scss";
+import "./solutions-module.scss";
 
 const cairo = Cairo({
     weight: ["variable"],
@@ -24,13 +24,13 @@ const services = [
   ];
 
 
-const fieldservice = () => {
+const solutions = () => {
   return (
    
 <main className="flex flex-col mt-20 justify-items-center ml-6">
       <div className="flex flex-row  ">
         <div className="flex flex-col  ">
-          <h1 className="text-4xl font-bold mt-6">Field Service</h1>
+          <h1 className="text-4xl font-bold mt-6">Soluciones</h1>
           <p className="text-xl mt-6">
           Symtron SA empresa líder en la región, en fabricación y mantenimiento de Kioskos </p>
         </div>
@@ -81,7 +81,7 @@ const fieldservice = () => {
   )
 }
 
-export default fieldservice
+export default solutions
 
 
 

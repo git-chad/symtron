@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import Fieldservice from "../components/fieldservice-module/fieldservice-component";
+import Solutions from "../components/solutions-module/solutions-component";
 
 
 const page = () => {
   return (
-    <Fieldservice/>
+    <Solutions/>
     
   );
 };

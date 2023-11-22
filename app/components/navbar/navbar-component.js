@@ -76,7 +76,7 @@ const Navbar = () => {
               {showDropdown && <Dropdown families={productFamilies} isActive={showDropdown}/>}
             </li>
             <li className="cursor-pointer">
-              <Link href="#">Field service</Link>
+              <Link href="/solutions">Solutions</Link>
             </li>
             <li className="cursor-pointer">
               <Link href="/about">About us</Link>

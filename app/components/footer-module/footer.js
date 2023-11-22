@@ -97,9 +97,9 @@ const Footer = () => {
         <div className="flex flex-col items-end mr-6 h-[60%] relative">
           <Link
             className={`${cairo.className} font-bold text-lg 2xl:text-2xl mt-4`}
-            href="/fieldservice"
+            href="/solutions"
           >
-            Field Service
+            Solutions
           </Link>
           <Link
             className={`${cairo.className} font-bold text-lg 2xl:text-2xl mt-4`}
