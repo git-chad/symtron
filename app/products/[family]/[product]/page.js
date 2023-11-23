@@ -22,11 +22,7 @@ const Page = ({ params }) => {
           <h1 className="text-4xl font-bold self-center sm:self-start">{product.name}</h1>
           <p className="mt-4">{product.description}</p>
           <div className="sm:w-1/5 mt-8 sm:mt-16 self-center">
-            <RectangleButton
-              label="Contact"
-              magneticEffect={true}
-              href="/contact"
-            />
+            
           </div>
         </div>
         <div className="sm:w-1/2 w-full p-2 sm:p-16 -mt-48 sm:-mt-0">

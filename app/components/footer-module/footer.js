@@ -1,5 +1,9 @@
 import { Cairo } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
+import linkedinIcon from "../../../public/Frame.svg";
+import instagramIcon from "../../../public/Frame-1.svg";
+import facebookIcon from "../../../public/icons8-facebook.svg";
 
 const cairo = Cairo({
   weight: ["variable"],
@@ -32,8 +36,6 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-
-        
 
         <div className="items-center text-start w-[67%]">
           <div className="flex flex-col ml-8 mt-4">
@@ -114,16 +116,18 @@ const Footer = () => {
             Contact
           </Link>
 
-          <div className="flex flex-row absolute bottom-0 right-0">
-            <a>
-              <img src="/Frame-1.svg" alt="instagram icon"></img>
+          <div className="icons flex mb-4 space-x-3 absolute bottom-0 right-0">
+            <a href="https://www.instagram.com/symtron/" target="_blank">
+              <Image src={instagramIcon} alt="instagram"></Image>
+            </a>
+            <a href="https://www.linkedin.com/company/symtron/" target="_blank">
+              <Image src={linkedinIcon} alt="linkedin"></Image>
             </a>
             <a
-              className="ml-4"
+              href="https://www.facebook.com/symtronargentina/"
               target="_blank"
-              href="https://www.linkedin.com/company/symtron/"
             >
-              <img src="/Frame.svg" alt="linkedin icon"></img>
+              <Image src={facebookIcon} alt="facebook"></Image>
             </a>
           </div>
         </div>
