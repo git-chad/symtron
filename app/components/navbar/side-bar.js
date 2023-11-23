@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import "./navbar-component.scss";
-import icon1 from "../../../public/Frame.svg";
-import icon2 from "../../../public/Frame-1.svg";
+import linkedinIcon from "../../../public/Frame.svg";
+import instagramIcon from "../../../public/Frame-1.svg";
+import facebookIcon from "../../../public/icons8-facebook.svg";
 import Image from "next/image";
 
 const SideBar = ({ sidebarRef, linksRef, isActive, closeSidebar }) => {
@@ -21,7 +22,7 @@ const SideBar = ({ sidebarRef, linksRef, isActive, closeSidebar }) => {
           <Link href="/products">Products</Link>
         </li>
         <li className="cursor-pointer" ref={(el) => (linksRef.current[2] = el)} onClick={closeSidebar}>
-          <Link href="/">Service</Link>
+          <Link href="/solutions">Solutions</Link>
         </li>
         <li className="cursor-pointer" ref={(el) => (linksRef.current[3] = el)} onClick={closeSidebar}>
           <Link href="/about">About us</Link>
@@ -33,8 +34,9 @@ const SideBar = ({ sidebarRef, linksRef, isActive, closeSidebar }) => {
 
 
         <div className="icons flex mb-4 space-x-4 absolute bottom-12 left-12">
-          <a href="" target="_blank"><Image src={icon2}></Image></a>
-          <a href="https://www.linkedin.com/company/symtron/" target="_blank"><Image src={icon1}></Image></a>
+          <a href="https://www.instagram.com/symtron/" target="_blank"><Image src={instagramIcon} alt="instagram"></Image></a>
+          <a href="https://www.linkedin.com/company/symtron/" target="_blank"><Image src={linkedinIcon} alt="linkedin"></Image></a>
+          <a href="https://www.facebook.com/symtronargentina/" target="_blank"><Image src={facebookIcon} alt="facebook"></Image></a>
         </div>
       </div>
 

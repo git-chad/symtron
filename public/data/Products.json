@@ -5,9 +5,9 @@
       "description": "Terminales de Autoservicio: inversión rentable y alto rendimiento en múltiples entornos. Flexibles y ampliables, se integran con facilidad para ofrecer funcionalidades extendidas.",
       "products": [
         {
-          "id": "VOLANS-II",
-          "name": "VOLANS II",
-          "title": "Serie TAS Volans II",
+          "id": "VOLANS",
+          "name": "VOLANS",
+          "title": "Serie TAS Volans",
           "description": [
             "Descripcion."
           ],
@@ -41,9 +41,9 @@
           ]
         },
         {
-          "id": "GAMMA-PMT",
+          "id": "GAMMA",
           "name": "GAMMA",
-          "title": "Serie TAS GAMMA PMT",
+          "title": "Serie TAS GAMMA",
           "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=1-kY713jh5uw76gwISgjFvRGN44m9fXIT",
@@ -57,27 +57,11 @@
             "https://drive.google.com/uc?id="
           ]
         },
+        
         {
-          "id": "GAMMA-II",
-          "name": "GAMMA II",
-          "title": "Serie TAS GAMMA II",
-          "description": ["Descripción"],
-          "images": [
-            "https://drive.google.com/uc?id=1764befhh_H1OnRe31Wwalcw8hva-X7cA",
-            "https://drive.google.com/uc?id=12UZqSJjB65bld-G_7QPMMs7dpy9o_JU9",
-            "https://drive.google.com/uc?id=1Xp_BdGeMgvvFTbv0C5nrmr97OrS9OQhA"
-          ],
-          "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
-        },
-        {
-          "id": "AXIS-PMT",
+          "id": "AXIS",
           "name": "AXIS",
-          "title": "Serie TAS AXIS PMT",
+          "title": "Serie TAS AXIS",
           "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=1xBm1xfaW_x-wXCmnDKbB-7OO3-Pig3f5",
@@ -120,23 +104,6 @@
           ]
         },
         {
-          "id": "LYNX",
-          "name": "LYNX",
-          "title": "Serie KMM Linx",
-          "description": ["Descripción"],
-          "images": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ],
-          "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
-        },
-        {
           "id": "INDUS",
           "name": "INDUS",
           "title": "Serie KMM Indus",
@@ -145,23 +112,6 @@
             "https://drive.google.com/uc?id=1C0ZNPH1IFSbWlw1efR8DBYyy3EBnCbCv",
             "https://drive.google.com/uc?id=1gPy9aZIrz8Y9DaDXAWkbVocN85tfK5hZ",
             "https://drive.google.com/uc?id=1YqAuD2SHjMzlai9ycZbOtv3dNceWx6-x"
-          ],
-          "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
-        },
-        {
-          "id": "FORNAX",
-          "name": "FORNAX",
-          "title": "Serie KMM Fornax",
-          "description": ["Descripción"],
-          "images": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
           ],
           "cuadro": "cuadro_1.jpg",
           "dimensiones": [
@@ -211,9 +161,9 @@
       "description": "asdfasd",
       "products": [
         {
-          "id": "S-LITE-500",
-          "name": "S-LITE 500",
-          "title": "Serie GMG S-Lite 500",
+          "id": "S-LITE",
+          "name": "S-LITE",
+          "title": "Serie GMG S-Lite",
           "description": ["Descripción"],
           "images": [
             "https://drive.google.com/uc?id=",
@@ -271,57 +221,6 @@
         "Gracias a su diseño simple y modular, se facilita la integración de dispositivos logrando funcionalidades que amplían las posibilidades de su negocio."
       ],
       "products": [
-        {
-          "id": "PEGASUS",
-          "name": "TCR PEGASUS",
-          "title": "Serie SMART TCR Pegasus",
-          "description": ["Descripción"],
-          "images": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ],
-          "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
-        },
-        {
-          "id": "CETUS",
-          "name": "BOX CETUS",
-          "title": "Serie SMART Box Cetus",
-          "description": ["Descripción"],
-          "images": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ],
-          "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
-        },
-        {
-          "id": "POLI",
-          "name": "POLI",
-          "title": "Serie PMT Poli",
-          "description": ["Descripción"],
-          "images": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ],
-          "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
-        },
         {
           "id": "OCTANS",
           "name": "OCTANS",
