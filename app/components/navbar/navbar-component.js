@@ -15,19 +15,19 @@ const Navbar = () => {
   const productFamilies = [
     {
       name: 'KMM',
-      products: ['Altair', 'Atria', 'Fornax', 'Indus', 'Lynx', 'Pyxis']
+      products: ['ALTAIR', 'ATRIA', 'INDUS',  'PYXIS']
     },
     {
       name: 'GMG',
-      products: ['Bartop', 'Lyra', 'S-Lite 500']
+      products: ['BARTOP', 'LYRA', 'S-LITE']
     },
     {
       name: 'ATM',
-      products: ['Alpha', 'Octans PMT', 'Polaris', 'Smart Box Cetus', 'Smart TCR Pegasus', 'Poli PMT']
+      products: ['ALPHA', 'OCTANS' , 'POLARIS']
     },
     {
       name: 'TAS',
-      products: ['Axis PMT', 'Gamma PMT', 'Gamma II', 'Vega', 'Volans II']
+      products: ['AXIS', 'GAMMA', 'VEGA', 'VOLANS']
     },
   ]
 
