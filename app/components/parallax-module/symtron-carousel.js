@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import gsap from "gsap";
+import localFont from 'next/font/local'
+
+const porscha = localFont({ src: '../../../public/911porschav3.ttf' })
 
 const SymtronCarousel = () => {
   const [loading, setLoading] = useState(true);
@@ -41,9 +44,9 @@ const SymtronCarousel = () => {
   }
 
   return (
-    <div className="relative z-50 w-screen h-[128px] overflow-hidden opacity-20 pointer-events-none">
+    <div className="relative z-50 w-screen h-[128px] overflow-hidden opacity-30 pointer-events-none text-[#9c1b31]">
       <p className="flex first-line absolute top-16">
-        <span className="inline-block w-[150px] flex-shrink-0 text-lg font-bold">
+        <span className={`${porscha.className} inline-block w-[150px] flex-shrink-0 text-lg font-bold`}>
           symtron
         </span>
       </p>
