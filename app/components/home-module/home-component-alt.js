@@ -31,12 +31,12 @@ const HomeComponentAlt = () => {
     <div className="alt-home relative w-screen flex flex-col items-center justify-center">
       <div className="relative sm:w-[70%] mt-48 sm:mt-36 flex flex-col z-10">
         <h1
-          className={`${porscha.className} font-medium text-center sm:text-start leading-tight`}
+          className={`${porscha.className} font-medium text-center  leading-tight`}
         >
           Symtron
         </h1>
 
-        <p className="mt-8 2xl:w-[80%] w-full self-end text-center sm:text-start 2xl:text-end">
+        <p className="mt-8 w-full self-end text-center sm:text-start">
           We offer a retail solution where self-service tech elevates customer
           service and boosts project productivity.{" "}
           <b className="underline">Join us and power up your work.</b>

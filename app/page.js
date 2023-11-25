@@ -28,6 +28,18 @@ export default function Page() {
   }, []);
 
   useEffect(() => {
+
+    const hasLoaded = sessionStorage.getItem('hasLoaded');
+
+    if (!hasLoaded) {
+      setTimeout(() => {
+        setIsLoading(false);
+        sessionStorage.setItem('hasLoaded', 'true');
+      }, 3500);
+    } else {
+      setIsLoading(false);
+    }
+
     setTimeout(() => {
       setIsLoading(false);
     }, 3500);
@@ -48,10 +60,10 @@ export default function Page() {
     <main className="overflow-hidden">
       {isLoading && <LoadingComponent timeline={timeline} />}
 
-      <HomeComponentAlt/>
+      <HomeComponentAlt />
       <ParallaxDisplay />
       <HomeStatistics />
-      <ServiceSection/>
+      <ServiceSection />
       <Cursor stickyBtn={stickyBtn} />
     </main>
   );

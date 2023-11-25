@@ -105,15 +105,15 @@ const ProductsComponent = () => {
                   {family.description}
                 </h2>
 
-                <div className="paragraphs sm:flex 2xl:flex-col 2xl:w-[80%] sm:mt-8 text-center sm:text-start my-16">
+                <div className="paragraphs sm:flex 2xl:flex-col 2xl:w-[80%] sm:mt-8 text-center sm:text-start my-8">
                   <div className="w-full 2xl:sm:w-3/4 2xl:self-start">
                     <p className="sm:p-8">{family.par1}</p>
                   </div>
-                  <div className="w-full 2xl:sm:w-3/4 2xl:self-end sm:p-8 mt-8 sm:mt-0">
+                  <div className="w-full 2xl:sm:w-3/4 2xl:self-en sm:p-8 mt-8 sm:mt-0">
                     <p className="">{family.par2}</p>
                   </div>
                 </div>
-                <div className="self-center sm:p-0 mb-16 sm:mb-0">
+                <div className="self-center sm:p-0 mb-16">
                   <RectangleButton
                     href="/products/[family]"
                     as={`/products/${family.name}`}
