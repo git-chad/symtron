@@ -4,6 +4,9 @@ import Image from "next/image";
 import linkedinIcon from "../../../public/Frame.svg";
 import instagramIcon from "../../../public/Frame-1.svg";
 import facebookIcon from "../../../public/icons8-facebook.svg";
+import localFont from 'next/font/local'
+
+const porscha = localFont({ src: '../../../public/911porschav3.ttf' })
 
 const cairo = Cairo({
   weight: ["variable"],
@@ -137,7 +140,7 @@ const Footer = () => {
       <section className="flex flex-col w-[50%]">
         <div className="h-[85%] relative">
           <h1
-            className={`${cairo.className} absolute bottom-0 right-0 leading-4 font-black text-6xl 2xl:text-8xl mr-10 mb-6`}
+            className={`${porscha.className} absolute bottom-0 right-0 leading-4 font-black text-5xl 2xl:text-6xl mr-10 mb-6`}
           >
             SYMTRON
           </h1>

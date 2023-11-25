@@ -14,7 +14,7 @@ const Page = ({params}) => {
     <main className="flex flex-col mt-20 justify-items-center p-8">
       
         <div className="flex flex-col">
-          <h1 className="text-4xl font-bold mt-6">{family.name}</h1>
+          <h1 className="text-4xl font-bold mt-6">{family.name} Series</h1>
           <p className="text-xl mt-6 max-w-2xl">{family.description}</p>
         </div>
       <div className="grid grid-cols-4 gap-6 mt-32 ">

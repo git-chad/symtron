@@ -99,7 +99,7 @@ const ProductsComponent = () => {
                 <h1
                   className={`${cairo.className} sm:self-start self-center font-bold sm:ml-8`}
                 >
-                  {family.name + " Family"}
+                  {family.name + " Series"}
                 </h1>
                 <h2 className="sm:ml-8 sm:self-start self-center text-center sm:text-start mt-2">
                   {family.description}

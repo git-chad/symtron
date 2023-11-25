@@ -4,6 +4,10 @@ import productsData from "../../../../public/data/Products.json";
 import Carousel from "../../../components/carousel";
 import "./product-page.scss";
 import RectangleButton from "@/app/components/rectangle-button/rectangle-btn";
+import localFont from 'next/font/local'
+import Image from "next/image";
+
+const porscha = localFont({ src: '../../../../public/911porschav3.ttf' })
 
 const Page = ({ params }) => {
   const { product: idProduct, family: idFamily } = params;
@@ -19,14 +23,14 @@ const Page = ({ params }) => {
     <div className="product-typo w-screen min-h-screen flex flex-col">
       <div className="flex flex-col sm:flex-row mt-24 w-full justify-center">
         <div className="flex flex-col sm:w-1/2 p-16">
-          <h1 className="text-4xl font-bold self-center sm:self-start">{product.name}</h1>
+          <h1 className={`${porscha.className} text-4xl font-bold self-center sm:self-start`}>{product.name}</h1>
           <p className="mt-4">{product.description}</p>
           <div className="sm:w-1/5 mt-8 sm:mt-16 self-center">
             
           </div>
         </div>
-        <div className="sm:w-1/2 w-full p-2 sm:p-16 -mt-48 sm:-mt-0">
-          <Carousel images={product.images} alt={product.name + " image"} />
+        <div className="sm:w-1/2 w-full p-2 sm:p-4 -mt-48 sm:-mt-0">
+          <Image src={product.images[0]} width={1000} height={0}/>
         </div>
       </div>
 
