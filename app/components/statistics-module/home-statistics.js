@@ -16,7 +16,7 @@ const overpass = Overpass({
 
 const HomeStatistics = () => {
   return (
-    <div className="flex items-center justify-center h-full 2xl:h-[75vh] mt-16 sm:mt-0">
+    <div className="flex items-center justify-center mt-16 sm:mt-0 py-16 self-center my-36">
       <div className="statistics-component flex flex-col justify-center items-center 2xl:w-[80%]">
         <div className="flex flex-col lg:flex-row justify-center">
           <div className="text-container 2xl:w-1/2 sm:p-8 flex flex-col items-center lg:items-start lg:w-1/2">
@@ -32,8 +32,8 @@ const HomeStatistics = () => {
             </p>
           </div>
 
-          <div className="flex sm:flex-row flex-col lg:items-start mt-8 sm:mt-0 lg:w-1/2 w-full">
-            <div className="sm:w-1/2 flex flex-col sm:items-start ml-6 sm:ml-0 sm:pr-8 lg:p-0 lg:space-y-8 2xl:space-y-0">
+          <div className="flex sm:flex-row flex-col lg:items-start mt-8 sm:mt-0">
+            <div className="sm:w-1/2 flex flex-col items-center ml-6 sm:ml-0 sm:pr-8 lg:p-0 lg:space-y-8 2xl:space-y-0">
               <StatisticItem
                 finalValue={30}
                 text="Over two decades of industry leadership"
@@ -43,7 +43,7 @@ const HomeStatistics = () => {
                 text="Of our products installed"
               />
             </div>
-            <div className="sm:w-1/2 flex flex-col sm:items-start ml-6 sm:ml-0 sm:p-8 lg:p-0 lg:space-y-8 2xl:space-y-0">
+            <div className="flex flex-col sm:items-start ml-6 sm:ml-0 sm:p-8 lg:p-0 lg:space-y-8 2xl:space-y-0">
               <StatisticItem finalValue={400} text="Satisfied customers" />
               <StatisticItem
                 finalValue={5}
@@ -52,7 +52,7 @@ const HomeStatistics = () => {
             </div>
           </div>
         </div>
-        <ClientsComponent />
+        {/* <ClientsComponent /> */}
       </div>
     </div>
   );

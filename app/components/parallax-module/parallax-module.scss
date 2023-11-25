@@ -63,8 +63,14 @@
         width: min(80%, 600px);
     }
 
+    // p {
+    //     font-size: clamp(16px, 1.5vw, 28px);
+    // }
+    
     p {
-        font-size: clamp(16px, 1.5vw, 28px);
+        font-size: min(5vw, 28px);
+        font-weight: 300;
+        text-wrap: balance;
     }
 }
 

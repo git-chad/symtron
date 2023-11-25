@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { Cairo } from "next/font/google";
 import "./home-module.scss";
 import { animateTitle, animateSubtitle, animateP } from "./home-anims";
+import localFont from 'next/font/local'
 
 const heroimg =
   "https://images.unsplash.com/photo-1501523460185-2aa5d2a0f981?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2731&q=80";
@@ -11,6 +12,8 @@ const cairo = Cairo({
   weight: ["variable"],
   subsets: ["latin"],
 });
+
+const porscha = localFont({ src: '../../../public/911porschav3.ttf' })
 
 const HomeComponentAlt = () => {
   const titleRef = useRef(null);
@@ -28,9 +31,9 @@ const HomeComponentAlt = () => {
     <div className="alt-home relative w-screen flex flex-col items-center justify-center">
       <div className="relative sm:w-[70%] mt-48 sm:mt-36 flex flex-col z-10">
         <h1
-          className={`${cairo.className} font-medium text-center sm:text-start leading-tight`}
+          className={`${porscha.className} font-medium text-center sm:text-start leading-tight`}
         >
-          Symtron<span className="font-light"> & Selfia</span>
+          Symtron
         </h1>
 
         <p className="mt-8 2xl:w-[80%] w-full self-end text-center sm:text-start 2xl:text-end">
