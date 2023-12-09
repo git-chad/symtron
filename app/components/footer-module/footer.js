@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="items-center text-start w-[67%]">
           <div className="flex flex-col ml-8 mt-4">
             <h2 className="font-bold text-lg 2xl:text-2xl">Contact</h2>
-            <p className="mt-6 text-lg">Buenos Aires</p>
+            <p className="mt-4 text-lg font-extrabold">Buenos Aires</p>
             <a className="mt-3" href="tel:+541152633232">
               (+54) 11 5263 3232
             </a>
@@ -69,30 +69,24 @@ const Footer = () => {
           </div>
 
           <div className=" border-t-2 border-t-white">
-            <div className="flex flex-col text-start mt-2 ml-8">
-              <p className="mt-4 text-sm 2xl:text-lg">Bogota</p>
-              <a className="mt-3" href="tel:+999999999">
-                (+54) 999999999
-              </a>
-              <a className="mt-4" href="tel:+999999999">
-                999999999
+            <div className="flex flex-col text-start  ml-8 mb-2">
+              <p className="mt-4 text-sm 2xl:text-lg font-extrabold">Bogota</p>
+              <a className="mt-3" href="tel:+5717460030">
+              +57 (1) 746 00 30
               </a>
               <a className="mt-3" href="mailto:selfia@latam.com">
                 selfia@latam.com
               </a>
               <a
-                href="https://maps.app.goo.gl/RJsdJquNKvwcDJGYA"
+                href="https://maps.app.goo.gl/SWyNiGbA7ic7hv9G7"
                 target="_blank"
                 className="mt-3"
               >
-                calle falsa 123 (CP 1702 ASQ),
+                Calle 74A # 23 - 19
                 <br />
                 Bogota, Colombia
               </a>
-              <a
-                href="https://maps.app.goo.gl/RJsdJquNKvwcDJGYA"
-                className="mt-3"
-              ></a>
+
             </div>
           </div>
         </div>

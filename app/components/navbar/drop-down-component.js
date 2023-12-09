@@ -4,7 +4,7 @@ import "./navbar-component.scss"
 
 const Dropdown = ({ families, isActive }) => {
   return (
-    <div className={`dropdown-content bg-white absolute flex space-x-16 text-black shadow-md p-8 top-6 ${isActive ? 'active' : ''}`}>
+    <div className={`dropdown-content bg-white absolute flex space-x-16 -ml-[90px] text-black shadow-md p-6 top-6 ${isActive ? 'active' : ''}`}>
       {families.map((family) => (
         <div key={family.name} className="family-container mt-8 w-[90px] ">
           <Link href={`/products/${family.name}`} className="font-bold text-2xl">
