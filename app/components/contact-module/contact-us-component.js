@@ -2,6 +2,7 @@
 import { Cairo } from "next/font/google";
 import React from "react";
 import { useForm } from "../../hooks/useForm";
+import InfoContacts from "./infoContacts";
 
 const cairo = Cairo({
   weight: ["variable"],
@@ -61,21 +62,19 @@ const ContactUs = () => {
   } = useForm(initialForm, validationsForm);
 
   return (
-    <main className="flex flex-col items-center justify-center w-full h-screen">
-      <div className="relative flex sm:flex-row flex-col sm:w-5/6 justify-evenly mt-8">
-        <div className="flex flex-col justify-between ">
-          <h1 className={`${cairo.className} text-6xl font-bold p-8 sm:p-0`}>
+    <main className="flex flex-col items-center justify-center w-full h-screen ">
+      <div className="relative flex sm:flex-row flex-col sm:w-5/6 justify-evenly mt-4 bg">
+        <div className="flex flex-col justify-around  ">
+          <h1 className={`${cairo.className} text-6xl font-bold sm:p-0`}>
             {" "}
             Contact Us
           </h1>
-          <div className="hidden sm:flex flex-col space-y-2">
-            <a href="tel=+541152633232">(+54) 11 5263 3232</a>
-            <a href="tel:+5408102203232">0810 220 3232</a>
-            <a href="mailto:symtron@latam.com">symtron@latam.com</a>
-          </div>
+          <InfoContacts />
+
+          
         </div>
         <form
-          className="flex flex-col justify-between space-y-2 sm:w-[40%]"
+          className="flex flex-col justify-between space-y-4 sm:w-[40%]"
           autoComplete="off"
           onSubmit={handleSubmit}
         >
