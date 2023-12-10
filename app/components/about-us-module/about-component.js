@@ -6,10 +6,7 @@ import { strokeAnimation } from "./about-anims";
 import ValuesComponent from "./values-component";
 
 // need four pics for this page
-import module from '@/public/module.jpg'
-import soldering from '@/public/soldering.jpg'
-import team from '@/public/team.jpg'
-import techworker from '@/public/techworker.jpg'
+
 import Image from "next/image";
 
 const cairo = Cairo({
@@ -60,10 +57,10 @@ const AboutComponent = () => {
         </div>
 
         <div className="images flex flex-col gap-4 sm:gap-16">
-          <Image src={module} alt="ATM Prototype" className="w-full h-auto" />
+          <Image src={"https://images.unsplash.com/photo-1579618215542-2ed5e10b65ed?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} width={0} height={0} alt="ATM Prototype" className="w-full h-auto" />
           <span>Production of our first ATM prototype - 2013</span>
           <Image
-            src={soldering}
+            src={"https://images.unsplash.com/photo-1579618215542-2ed5e10b65ed?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} width={0} height={0}
             alt="Office Renovation"
             className="w-full h-auto"
           />
@@ -79,10 +76,10 @@ const AboutComponent = () => {
 
       <section className="flex flex-col sm:grid sm:grid-cols-2 gap-4 sm:gap-0 p-4 sm:p-16 items-start">
         <div className="images flex flex-col gap-4 sm:gap-16">
-          <Image src={team} alt="ATM Prototype" className="w-full h-auto" />
+          <Image src={"https://images.unsplash.com/photo-1579618215542-2ed5e10b65ed?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} width={0} height={0} alt="ATM Prototype" className="w-full h-auto" />
           <span>Production of our first ATM prototype - 2013</span>
           <Image
-            src={techworker}
+            src={"https://images.unsplash.com/photo-1579618215542-2ed5e10b65ed?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} width={0} height={0}
             alt="Office Renovation"
             className="w-full h-auto"
           />
@@ -116,7 +113,7 @@ const AboutComponent = () => {
         height="1951"
         viewBox="0 0 793 1951"
         fill="none"
-        className="absolute top-0 -left-10 w-full h-full -z-10"
+        className="absolute top-0 -left-10 w-full h-full -z-10 blur-xl"
         ref={svgRef}
       >
         <linearGradient

@@ -6,6 +6,7 @@ import localFont from "next/font/local";
 import Image from "next/image";
 
 const porscha = localFont({ src: "../../../../public/911porschav3.ttf" });
+const neuropol = localFont({ src: "../../../../public/neuropol.otf" });
 
 const Page = ({ params }) => {
   const { product: idProduct, family: idFamily } = params;
@@ -26,7 +27,7 @@ const Page = ({ params }) => {
       <div className="flex flex-col sm:flex-row mt-24 w-full justify-center ">
         <div className="flex flex-col sm:w-1/2 p-16 h-64">
           <h1
-            className={`${porscha.className} text-4xl font-bold self-center sm:self-start`}
+            className={`${neuropol.className} text-4xl font-bold self-center sm:self-start`}
           >
             {product.name}
           </h1>

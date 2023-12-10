@@ -4,6 +4,7 @@ import { Cairo } from "next/font/google";
 import "./home-module.scss";
 import { animateTitle, animateSubtitle, animateP } from "./home-anims";
 import localFont from 'next/font/local'
+import bigLogo from '../../../public/symtron-logo-big.svg'
 
 const heroimg =
   "https://images.unsplash.com/photo-1501523460185-2aa5d2a0f981?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2731&q=80";
@@ -30,14 +31,10 @@ const HomeComponentAlt = () => {
   // bg-[#1e1415] text-white
   return (
     <div className="alt-home relative w-screen flex flex-col items-center justify-center">
-      <div className="relative sm:w-[70%] mt-48 sm:mt-36 flex flex-col z-10">
-        <h1
-          className={`${neuropol.className} font-medium text-center  leading-tight`}
-        >
-          Symtron
-        </h1>
+      <div className="relative sm:w-[70%] mt-48 sm:mt-64 flex flex-col z-10">
+        <Image src={bigLogo}></Image>
 
-        <p className="mt-8 w-full self-end text-center sm:text-start">
+        <p className="mt-16 w-full self-end text-center">
           We offer a retail solution where self-service tech elevates customer
           service and boosts project productivity.{" "}
           <b className="underline">Join us and power up your work.</b>

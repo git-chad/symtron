@@ -17,3 +17,8 @@
     }
 }
 
+.pppp {
+    font-size: clamp(16px, 1.5vw, 28px);
+    text-wrap: balance;
+    max-width: 50ch;
+}

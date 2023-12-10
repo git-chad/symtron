@@ -4,6 +4,7 @@ import "./service-module.scss";
 import Image from "next/image";
 import LineBreak from "../line-break";
 import { animateCards } from "./service-anims";
+import './service-module.scss'
 
 const cairo = Cairo({
   weight: ["variable"],
@@ -13,30 +14,30 @@ const cairo = Cairo({
 const services = [
   {
     number: "01",
-    title: "Sector Strategies",
-    description:
-      "Different markets demand creative solutions. At Symtron, we collaborate to craft innovative products tailored to our clients&apos; needs.",
-    image: "image3.png",
-  },
-  {
-    number: "02",
     title: "Banking Solutions",
     description:
       "In the fast-paced world of finance, Symtron delivers secure and intuitive technologies to keep financial entities at the forefront.",
     image: "image4.png",
   },
   {
-    number: "03",
+    number: "02",
     title: "Commerce Innovation",
     description:
-      "Blending fun with functionality, Symtron brings the latest in entertainment technology, enhancing user experiences and audience engagement.",
+      "Blending fun with functionality, Symtron brings the latest in entertainment technology, enhancing user experiences and audience engagement",
+    image: "image5.png",
+  },
+  {
+    number: "03",
+    title: "Entertainment Techs",
+    description:
+      "Retail landscapes are ever-changing. Symtron's solutions adapt and evolve, ensuring retailers stay competitive and customer-focused.",
     image: "image5.png",
   },
   {
     number: "04",
-    title: "Entertainment Techs",
+    title: "Access Control",
     description:
-      "Retail landscapes are ever-changing. Symtron&apos; solutions adapt and evolve, ensuring retailers stay competitive and customer-focused.",
+      "Symtron's access control solutions enhance your businesses' security beyond recognition.",
     image: "image7.png",
   },
 ];
@@ -71,17 +72,25 @@ const ServiceSection = () => {
 
   return (
     <>
-      <main className="service-component flex flex-col justify-center" id="serviceSection">
+      <main
+        className="service-component flex flex-col justify-center"
+        id="serviceSection"
+      >
         <h1 className={`${cairo.className} md:ml-8 text-center sm:text-start`}>
           Industry-Specific Solutions
         </h1>
+        <p className="pppp md:ml-8 mt-8 text-center sm:text-start">
+          Different markets demand creative solutions. At Symtron, we
+          collaborate to craft innovative products tailored to our clients&apos;
+          needs.
+        </p>
         <div
           className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-8 p-8 [perspective:2000px]"
           ref={cardsRef}
         >
           {services.map((service, index) => (
             <section
-              style={{opacity: 0}}
+              style={{ opacity: 0 }}
               key={index}
               onMouseEnter={(event) => {
                 boundingRef.current =
@@ -108,9 +117,9 @@ const ServiceSection = () => {
                   `${xRot}deg`
                 );
               }}
-              className={`relative flex flex-col items-center justify-start mb-4 shadow-sm [transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))]`}
+              className={`relative flex flex-col items-center justify-start mb-4 [transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))]`}
             >
-              <div className="flex flex-col w-full max-w-[500px] mx-auto">
+              <div className="flex flex-col w-full max-w-[500px] lg:h-[600px] 2xl:min-h-[680px] mx-auto justify-start items-start relative">
                 <h2 className="font-extralight mt-4">{service.number}</h2>
                 <h3
                   className={`${cairo.className} font-bold mt-8 leading-[95%]`}
@@ -118,7 +127,7 @@ const ServiceSection = () => {
                   {service.title}
                 </h3>
                 <p className="text-start my-8">{service.description}</p>
-                <div className="image-wrapper self-end mb-16">
+                <div className="absolute bottom-0">
                   <Image
                     src={`/${service.image}`}
                     width={9999}
@@ -132,7 +141,6 @@ const ServiceSection = () => {
         </div>
       </main>
       <div className="flex justify-center items-center">
-        <LineBreak />
       </div>
     </>
   );
