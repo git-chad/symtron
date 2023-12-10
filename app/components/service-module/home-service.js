@@ -71,7 +71,7 @@ const ServiceSection = () => {
 
   return (
     <>
-      <main className="service-component flex flex-col justify-center">
+      <main className="service-component flex flex-col justify-center" id="serviceSection">
         <h1 className={`${cairo.className} md:ml-8 text-center sm:text-start`}>
           Industry-Specific Solutions
         </h1>

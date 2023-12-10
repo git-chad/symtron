@@ -14,6 +14,7 @@ const cairo = Cairo({
 });
 
 const porscha = localFont({ src: '../../../public/911porschav3.ttf' })
+const neuropol = localFont({ src: '../../../public/neuropol.otf' })
 
 const HomeComponentAlt = () => {
   const titleRef = useRef(null);
@@ -31,7 +32,7 @@ const HomeComponentAlt = () => {
     <div className="alt-home relative w-screen flex flex-col items-center justify-center">
       <div className="relative sm:w-[70%] mt-48 sm:mt-36 flex flex-col z-10">
         <h1
-          className={`${porscha.className} font-medium text-center  leading-tight`}
+          className={`${neuropol.className} font-medium text-center  leading-tight`}
         >
           Symtron
         </h1>

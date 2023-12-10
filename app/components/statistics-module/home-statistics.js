@@ -47,7 +47,7 @@ const HomeStatistics = () => {
               <StatisticItem finalValue={400} text="Satisfied customers" />
               <StatisticItem
                 finalValue={5}
-                text="Presence in 4 countries globally"
+                text="Presence in 5 countries globally"
               />
             </div>
           </div>

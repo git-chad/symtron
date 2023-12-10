@@ -6,30 +6,32 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "../../../public/s-logo.svg";
 import Dropdown from "./drop-down-component";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [hideNavbar, setHideNavbar] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const router = useRouter();
 
   const productFamilies = [
     {
-      name: 'KMM',
-      products: ['ALTAIR', 'ATRIA', 'INDUS',  'PYXIS']
+      name: "KMM",
+      products: ["ALTAIR", "ATRIA", "INDUS", "PYXIS"],
     },
     {
-      name: 'GMG',
-      products: ['BARTOP', 'LYRA', 'S-LITE']
+      name: "GMG",
+      products: ["BARTOP", "LYRA", "S-LITE"],
     },
     {
-      name: 'ATM',
-      products: ['ALPHA', 'OCTANS' , 'POLARIS']
+      name: "ATM",
+      products: ["ALPHA", "OCTANS", "POLARIS"],
     },
     {
-      name: 'TAS',
-      products: ['AXIS', 'GAMMA', 'VEGA', 'VOLANS']
+      name: "TAS",
+      products: ["AXIS", "GAMMA", "VEGA", "VOLANS"],
     },
-  ]
+  ];
 
   useEffect(() => {
     const distanceCheck = () => {
@@ -55,6 +57,26 @@ const Navbar = () => {
     };
   }, []);
 
+  const scrollToTarget = (targetId) => {
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  const handleScrollDown = async (e, targetId) => {
+    e.preventDefault();
+
+    if (router.pathname !== "/") {
+      await router.push("/");
+      setTimeout(() => {
+        scrollToTarget(targetId);
+      }, 100);
+    } else {
+      scrollToTarget(targetId);
+    }
+  };
+
   return (
     <>
       <nav
@@ -67,16 +89,27 @@ const Navbar = () => {
         </Link>
         <div className="nav-items flex">
           <ul className="flex items-center justify-center space-x-8 px-8">
-            <li 
-            className="cursor-pointer relative"
-            onMouseEnter={() => {setShowDropdown(true)}}
-            onMouseLeave={() => {setShowDropdown(false)}}
+            <li
+              className="cursor-pointer relative"
+              onMouseEnter={() => {
+                setShowDropdown(true);
+              }}
+              onMouseLeave={() => {
+                setShowDropdown(false);
+              }}
             >
               <Link href="/products">Products</Link>
-              {showDropdown && <Dropdown families={productFamilies} isActive={showDropdown}/>}
+              {showDropdown && (
+                <Dropdown families={productFamilies} isActive={showDropdown} />
+              )}
             </li>
             <li className="cursor-pointer">
-              <Link href="/solutions">Solutions</Link>
+              <a
+                href="#serviceSection"
+                onClick={(e) => handleScrollDown(e, "serviceSection")}
+              >
+                Solutions
+              </a>
             </li>
             <li className="cursor-pointer">
               <Link href="/about">About us</Link>

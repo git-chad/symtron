@@ -5,8 +5,31 @@ import linkedinIcon from "../../../public/Frame.svg";
 import instagramIcon from "../../../public/Frame-1.svg";
 import facebookIcon from "../../../public/icons8-facebook.svg";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const SideBar = ({ sidebarRef, linksRef, isActive, closeSidebar }) => {
+  const router = useRouter()
+
+  const scrollToTarget = (targetId) => {
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  const handleScrollDown = async (e, targetId) => {
+    e.preventDefault();
+
+    if (router.pathname !== "/") {
+      await router.push("/");
+      setTimeout(() => {
+        scrollToTarget(targetId);
+      }, 100);
+    } else {
+      scrollToTarget(targetId);
+    }
+  };
+
   return (
     <div
       ref={sidebarRef}
@@ -15,31 +38,56 @@ const SideBar = ({ sidebarRef, linksRef, isActive, closeSidebar }) => {
       }`}
     >
       <ul className="w-full h-full flex flex-col justify-center text-white text-[36px] font-bold ml-12 space-y-8">
-        <li className="cursor-pointer" ref={(el) => (linksRef.current[0] = el)} onClick={closeSidebar}>
+        <li
+          className="cursor-pointer"
+          ref={(el) => (linksRef.current[0] = el)}
+          onClick={closeSidebar}
+        >
           <Link href="/">Home</Link>
         </li>
-        <li className="cursor-pointer" ref={(el) => (linksRef.current[1] = el)} onClick={closeSidebar}>
+        <li
+          className="cursor-pointer"
+          ref={(el) => (linksRef.current[1] = el)}
+          onClick={closeSidebar}
+        >
           <Link href="/products">Products</Link>
         </li>
-        <li className="cursor-pointer" ref={(el) => (linksRef.current[2] = el)} onClick={closeSidebar}>
-          <Link href="/solutions">Solutions</Link>
+        <li className="cursor-pointer">
+          <a
+            href="#serviceSection"
+            onClick={(e) => handleScrollDown(e, "serviceSection")}
+          >
+            Solutions
+          </a>
         </li>
-        <li className="cursor-pointer" ref={(el) => (linksRef.current[3] = el)} onClick={closeSidebar}>
+        <li
+          className="cursor-pointer"
+          ref={(el) => (linksRef.current[3] = el)}
+          onClick={closeSidebar}
+        >
           <Link href="/about">About us</Link>
         </li>
-        <li className="cursor-pointer" ref={(el) => (linksRef.current[4] = el)} onClick={closeSidebar}>
+        <li
+          className="cursor-pointer"
+          ref={(el) => (linksRef.current[4] = el)}
+          onClick={closeSidebar}
+        >
           <Link href="/contact">Contact</Link>
         </li>
       </ul>
 
-
-        <div className="icons flex mb-4 space-x-4 absolute bottom-12 left-12">
-          <a href="https://www.instagram.com/symtron/" target="_blank"><Image src={instagramIcon} alt="instagram"></Image></a>
-          <a href="https://www.linkedin.com/company/symtron/" target="_blank"><Image src={linkedinIcon} alt="linkedin"></Image></a>
-          <a href="https://www.facebook.com/symtronargentina/" target="_blank"><Image src={facebookIcon} alt="facebook"></Image></a>
-        </div>
+      <div className="icons flex mb-4 space-x-4 absolute bottom-12 left-12">
+        <a href="https://www.instagram.com/symtron/" target="_blank">
+          <Image src={instagramIcon} alt="instagram"></Image>
+        </a>
+        <a href="https://www.linkedin.com/company/symtron/" target="_blank">
+          <Image src={linkedinIcon} alt="linkedin"></Image>
+        </a>
+        <a href="https://www.facebook.com/symtronargentina/" target="_blank">
+          <Image src={facebookIcon} alt="facebook"></Image>
+        </a>
       </div>
-
+    </div>
   );
 };
 
