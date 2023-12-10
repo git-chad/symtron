@@ -17,11 +17,7 @@
             "https://drive.google.com/uc?id=1k5Y9rbnNSxIjwAuemf2GkEqwt81T_Wy9"
           ],
           "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
+          "dimensiones": "https://drive.google.com/uc?id="
         },
         {
           "id": "VEGA",
@@ -34,11 +30,7 @@
             "https://drive.google.com/uc?id=1g_Hp1QFubLU07jNzZip6xJvoT5xejeQB"
           ],
           "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
+          "dimensiones": "https://drive.google.com/uc?id="
         },
         {
           "id": "GAMMA",
@@ -51,11 +43,7 @@
             "https://drive.google.com/uc?id=1iqF1anUiL-t6qbZ9I0za5pHAfI64pcJp"
           ],
           "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
+          "dimensiones": "https://drive.google.com/uc?id="
         },
         
         {
@@ -69,11 +57,7 @@
             "https://drive.google.com/uc?id=1BBlgJvHZkPtdXEX0SvLvdNgZxphsde8i"
           ],
           "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
+          "dimensiones": "https://drive.google.com/uc?id="
         }
       ]
     },
@@ -92,16 +76,13 @@
             "Gracias a su diseño simple y modular, se facilita la integración de dispositivos logrando funcionalidades que amplían las posibilidades de su negocio"
           ],
           "images": [
-            "https://drive.google.com/uc?id=1cryAgUpbm2_mXICnR9-JaxdbBL3Rm42x",
+            "https://drive.google.com/uc?id=1Vd0-oz3yBKwlZJCkUR_CIkcovCnx8rPE",
             "https://drive.google.com/uc?id=1OOY9Qx-Qx7qKX0-RFN-FLVnOwCIF0E_w",
             "https://drive.google.com/uc?id=1Un-aQRsww67sLTWNOVq5Bb8KM8_0pSQv"
           ],
-          "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
+          "cuadro": "https://drive.google.com/uc?id=1Bs8Go_7p2A6fElLRccIrpCXRIMB0mKRp",
+          "dimensiones":"https://drive.google.com/uc?id=1IHZZrJ7nCUNdastM9MEnEqvx1xTS_Qs9"
+          
         },
         {
           "id": "INDUS",
@@ -114,11 +95,8 @@
             "https://drive.google.com/uc?id=1YqAuD2SHjMzlai9ycZbOtv3dNceWx6-x"
           ],
           "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
+          "dimensiones": "https://drive.google.com/uc?id="
+          
         },
         {
           "id": "ATRIA",
@@ -131,11 +109,7 @@
             "https://drive.google.com/uc?id=1hicmhGhp1JgNFC_Z4k7YySAGYyyvVgE-"
           ],
           "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
+          "dimensiones": "https://drive.google.com/uc?id="
         },
         {
           "id": "ALTAIR",
@@ -148,11 +122,7 @@
             "https://drive.google.com/uc?id="
           ],
           "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
+          "dimensiones": "https://drive.google.com/uc?id="
         }
       ]
     },
@@ -171,11 +141,7 @@
             "https://drive.google.com/uc?id="
           ],
           "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
+          "dimensiones": "https://drive.google.com/uc?id="
         },
         {
           "id": "LYRA",
@@ -188,11 +154,7 @@
             "https://drive.google.com/uc?id="
           ],
           "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
+          "dimensiones": "https://drive.google.com/uc?id="
         },
         {
           "id": "BARTOP",
@@ -205,11 +167,7 @@
             "https://drive.google.com/uc?id="
           ],
           "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
+          "dimensiones": "https://drive.google.com/uc?id="
         }
       ]
     },
@@ -232,11 +190,7 @@
             "https://drive.google.com/uc?id=13PQuLB5KAjb3G33GICu_Tio534oBOZK0"
           ],
           "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
+          "dimensiones": "https://drive.google.com/uc?id="
         },
         {
           "id": "POLARIS",
@@ -249,11 +203,7 @@
             "https://drive.google.com/uc?id="
           ],
           "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
+          "dimensiones": "https://drive.google.com/uc?id="
         },
         {
           "id": "ALPHA",
@@ -266,11 +216,7 @@
             "https://drive.google.com/uc?id=1XRFtpcsV_w9ASCwqkJIWFcmOKCuLhUqV"
           ],
           "cuadro": "cuadro_1.jpg",
-          "dimensiones": [
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id=",
-            "https://drive.google.com/uc?id="
-          ]
+          "dimensiones": "https://drive.google.com/uc?id="
         }
       ]
     }

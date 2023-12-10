@@ -32,22 +32,23 @@ const Page = ({ params }) => {
             {product.name}
           </h1>
           <p className="mt-4">{product.description}</p>
-          <div className="sm:w-1/5 mt-8 sm:mt-16 self-center"></div>
         </div>
-        <div className="sm:w-1/2 w-full p-2 sm:p-4 sm:-mt-0">
-          <Image src={product.images[0]} width={1000} height={0} alt={product.name}/>
+        <div className="sm:w-1/2 w-full p-2 sm:p-4 sm:-mt-0  ">
+          <img className="h-[700px]" src={product.images[0]}  alt={product.name} />
         </div>
       </div>
 
       <div className="flex flex-col p-16">
-        <h2 className="items-center justify-center text-2xl font-bold mt-4">
-          Información
-        </h2>
-        <img src={product.cuadro} alt="Cuadro" />
-        <div className="flex flex-row space-x-4">
-          {product.dimensiones.map((img, i) => (
-            <img src={img} alt={`Dimensiones ${i}`} key={i} />
-          ))}
+        <h2 className="">Informacion</h2>
+        <div className="flex sm:flex-row flex-col space-x-4 mt-6 -ml-2">
+          <img src={product.cuadro} alt="Cuadro" width={800} />
+
+          <img
+            src={product.dimensiones}
+            alt={product.dimensiones}
+            width={900}
+            height={1000}
+          />
         </div>
       </div>
     </div>
