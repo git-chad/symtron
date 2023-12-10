@@ -85,7 +85,7 @@ const Navbar = () => {
         }`}
       >
         <Link href="/" className="logo ml-12">
-          <Image width={32} height={0} src={logo}></Image>
+          <Image width={40} height={0} src={logo}></Image>
         </Link>
         <div className="nav-items flex">
           <ul className="flex items-center justify-center space-x-8 px-8">
