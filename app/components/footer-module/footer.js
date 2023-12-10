@@ -5,6 +5,7 @@ import linkedinIcon from "../../../public/Frame.svg";
 import instagramIcon from "../../../public/Frame-1.svg";
 import facebookIcon from "../../../public/icons8-facebook.svg";
 import localFont from 'next/font/local'
+import bigLogo2 from '../../../public/symtron-logo-big2.svg'
 
 const neuropol = localFont({ src: '../../../public/neuropol.otf' })
 
@@ -133,11 +134,12 @@ const Footer = () => {
 
       <section className="flex flex-col w-[50%]">
         <div className="h-[85%] relative">
-          <h1
-            className={`${neuropol.className} absolute bottom-0 right-0 leading-4 font-black text-5xl 2xl:text-6xl mr-10 mb-6`}
+          <Image
+            className={`absolute bottom-0 right-0 mr-10 mb-6`}
+            src={bigLogo2}
+            height={50}
           >
-            Symtron
-          </h1>
+          </Image>
         </div>
         <div className="border-t-white border-t-2 mt-4">
           <p className="text-sm mt-3 ml-4">

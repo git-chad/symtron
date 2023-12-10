@@ -39,13 +39,13 @@ const ParallaxDisplay = () => {
 
   return (
     <main className="flex flex-col mt-36">
-      <div ref={container} className="wrapper h-screen">
+      {/* <div ref={container} className="wrapper h-screen">
         <Column images={[images[7], images[2], images[5]]} y={y} />
         <Column images={[images[0], images[8], images[3]]} y={y2} />
         <Column images={[images[6], images[1], images[9]]} y={y3} />
         <Column images={[images[4], images[2], images[5]]} y={y4} />
 
-      </div>
+      </div> */}
       <div className="relative info-wrapper" ref={infoRef}>
         <SymtronCarousel />
         <div className="my-36 h-[50vh] flex flex-col justify-center items-center">
