@@ -15,7 +15,7 @@ const cairo = Cairo({
 });
 
 // later on replace 0 1 2
-const images = ["/kmm1.jpg", "/kmm2.jpg", "/kmm3.jpg", "/atria.png", "/design.jpg", "/gamma.png", "/module.jpg", "/soldering.jpg", "/team.jpg", "/techworker.jpg"];
+const images = ["/kmm1.jpg", "/kmm2.jpg", "/kmm3.jpg", "/atria.png", "/design.jpg", "/gamma.png", "/module.jpg", "/soldering.jpg", "/production1.jpg", "/production2.jpg"];
 
 const ParallaxDisplay = () => {
   const infoRef = useRef(null);
